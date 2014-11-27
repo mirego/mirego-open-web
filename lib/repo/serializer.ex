@@ -2,7 +2,6 @@ defmodule OpenMirego.Repo.Serializer do
   use Timex
   alias OpenMirego.Repo.Resource
 
-  @datetime_regex ~r/(?<year>\d+)-(?<month>\d+)-(?<day>\d+)T(?<hour>\d+):(?<minute>\d+):(?<second>\d+)Z/
   @exclusions ~w(
     mirego.github.io
     heroku-buildpack-bower
