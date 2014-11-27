@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Open Source @ Mirego</title>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:light,regular,bold,italic&v1">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/images/ico-favicon.png">
+
+    <script type="text/javascript" src="//use.typekit.net/fgt8cwf.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class='m'>
+          <a href="javascript://"><strong><img alt="" src="/images/ico-m.png" width="20" /></strong></a>
+          <span><img alt="" src="/images/bg-m.png" width="62" /></span>
+          <ul>
+            <li><a href="http://www.mirego.com/en">Mirego</a></li>
+            <li><a href="http://life.mirego.com">Life</a></li>
+            <li><a href="http://shift.mirego.com">Blog</a></li>
+            <li><a href="http://www.mirego.org/en">Org</a></li>
+            <li class='active'><a href="http://open.mirego.com">Code</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1><a href="https://github.com/mirego">Open Source</a> <span>@</span> <a href="http://mirego.com">Mirego</a></h1>
+          <h2>We hope these lines of codes will be useful and help you build great products.</h2>
+        </div><small></small>
+      </header>
+
+      <%= @inner %>
+    </div>
+  </body>
+</html>

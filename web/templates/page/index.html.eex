@@ -1,0 +1,14 @@
+<section id="content">
+  <div class="inner-content">
+    <%= Enum.map @repos, fn (repo)-> %>
+      <dl class="<%= repo.language %>">
+        <dt>
+          <a href=<%= repo.url %> target="_blank">
+            <%= repo.name %>
+          </a>
+        </dt>
+        <dd><%= repo.description %></dd>
+      </dl>
+    <% end %>
+  </div>
+</section>
