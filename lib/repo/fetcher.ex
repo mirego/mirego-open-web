@@ -3,10 +3,7 @@ defmodule OpenMirego.Repo.Fetcher do
   alias OpenMirego.Repo.Serializer
 
   @user_agent {:"User-Agent", "Open Mirego Website"}
-  @api_key Application.get_env(:github, OpenMirego.Router)[:api_key]
-  @auth "#{@api_key}:x-oauth-basic"
   @org "mirego"
-  @url "https://#{@auth}@api.github.com/orgs/#{@org}/repos?type=public&per_page=100"
 
   def fetch do
     cached_body
@@ -19,11 +16,14 @@ defmodule OpenMirego.Repo.Fetcher do
   end
 
   defp body do
-    case HTTPotion.get(@url, [@user_agent]) do
+    case HTTPotion.get(url, [@user_agent]) do
       %HTTPotion.Response{status_code: 200, body: body} ->
         body
-      _ ->
-        "{}"
+      _error ->
+        "[]"
     end
   end
+
+  defp url, do: "https://#{auth}@api.github.com/orgs/#{@org}/repos?type=public&per_page=100"
+  defp auth, do: "#{Application.get_env(:github, OpenMirego.Router)[:api_key]}:x-oauth-basic"
 end
