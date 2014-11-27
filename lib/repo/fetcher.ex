@@ -9,9 +9,13 @@ defmodule OpenMirego.Repo.Fetcher do
   @url "https://#{@auth}@api.github.com/orgs/#{@org}/repos?type=public&per_page=100"
 
   def fetch do
-    body
+    cached_body
     |> JSON.decode!
     |> Serializer.serialize
+  end
+
+  defp cached_body do
+    ConCache.get_or_store(:github, "#{@org}:repos", &body/0)
   end
 
   defp body do
