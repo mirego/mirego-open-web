@@ -14,6 +14,9 @@ config :phoenix, OpenMirego.Router,
   debug_errors: false,
   error_controller: OpenMirego.PageController
 
+config :github, OpenMirego.Router,
+  api_key: System.get_env("GITHUB_API_KEY")
+
 # Session configuration
 config :phoenix, OpenMirego.Router,
   session: [store: :cookie,

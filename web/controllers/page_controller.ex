@@ -4,7 +4,7 @@ defmodule OpenMirego.PageController do
   plug :action
 
   def index(conn, _params) do
-    repos = OpenMirego.Repo.Fetcher.fetch("mirego")
+    repos = OpenMirego.Repo.Fetcher.fetch
 
     render conn, "index.html", repos: repos
   end
