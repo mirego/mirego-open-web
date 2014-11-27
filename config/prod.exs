@@ -13,6 +13,8 @@ use Mix.Config
 
 config :phoenix, OpenMirego.Router,
   http: [port: System.get_env("PORT")],
+  ssl: false,
+  host: System.get_env("CANONICAL_HOST"),
   secret_key_base: System.get_env("SECRET_KEY_BASE")
 
 config :logger,
