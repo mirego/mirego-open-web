@@ -15,15 +15,18 @@ defmodule OpenMirego.Repo.Serializer do
     |> Enum.sort(&(&1.pushed_at < &2.pushed_at))
   end
 
-  defp reject?(%{"name" => name}), do: Enum.member?(@exclusions, name)
+  defp reject?(%{"name" => name, "fork" => repo_is_a_fork}) do
+    repo_is_a_fork || Enum.member?(@exclusions, name)
+  end
 
-  defp map(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at}) do
+  defp map(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at, "fork" => fork}) do
     %Resource{
       name: name,
       description: description,
       language: parsed_language(language),
       pretty_language: parsed_pretty_language(language),
       url: html_url,
+      fork: fork,
       raw_pushed_at: pushed_at,
       pushed_at: parsed_time(pushed_at)
     }
@@ -33,6 +36,7 @@ defmodule OpenMirego.Repo.Serializer do
   defp parsed_language("Ruby"),        do: "gem"
   defp parsed_language("JavaScript"),  do: "js"
   defp parsed_language("CSS"),         do: "css"
+  defp parsed_language("Java"),        do: "java"
   defp parsed_language(nil),           do: "no-language"
   defp parsed_language(lang),          do: lang
 
@@ -40,6 +44,7 @@ defmodule OpenMirego.Repo.Serializer do
   defp parsed_pretty_language("Ruby"),        do: "Ruby"
   defp parsed_pretty_language("JavaScript"),  do: "js"
   defp parsed_pretty_language("CSS"),         do: "css"
+  defp parsed_pretty_language("Java"),        do: "Java"
   defp parsed_pretty_language(nil),           do: "no-language"
   defp parsed_pretty_language(lang),          do: lang
 

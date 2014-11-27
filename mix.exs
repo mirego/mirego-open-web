@@ -15,7 +15,7 @@ defmodule OpenMirego.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [mod: {OpenMirego, []},
-     applications: [:phoenix, :cowboy, :logger, :hackney]]
+     applications: [:phoenix, :cowboy, :logger, :httpotion]]
   end
 
   # Specifies your project dependencies
@@ -23,7 +23,8 @@ defmodule OpenMirego.Mixfile do
   # Type `mix help deps` for examples and options
   defp deps do
     [{:phoenix, github: "phoenixframework/phoenix"},
-     {:hackney, "~> 0.15"},
+     {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.0"},
+     {:httpotion, "~> 0.2.0"},
      {:timex, "~> 0.13.1"},
      {:cowboy, "~> 1.0"}]
   end
