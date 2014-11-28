@@ -6,3 +6,10 @@ To start your new Phoenix application:
 2. Start Phoenix router with `mix phoenix.start`
 
 Now you can visit `localhost:4000` from your browser.
+
+## Environment variables
+
+```
+# GitHub authentication token to make API requests
+GITHUB_API_KEY=
+```
