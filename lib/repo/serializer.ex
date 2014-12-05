@@ -2,9 +2,15 @@ defmodule OpenMirego.Repo.Serializer do
   use Timex
   alias OpenMirego.Repo.Resource
 
-  def serialize(%{"private" => true}) do
+  @hidden_repos ~w(
+    mirego.github.io
+    heroku-buildpack-bower
+    RentThis-iOS
+  )
+
+  def serialize(%{"visible" => false}) do
     %Resource{
-      public: false
+      visible: false
     }
   end
 
@@ -18,7 +24,7 @@ defmodule OpenMirego.Repo.Serializer do
       fork: fork,
       raw_pushed_at: pushed_at,
       pushed_at: parsed_time(pushed_at),
-      public: !private
+      visible: !private && !fork && !Enum.member?(@hidden_repos, name)
     }
   end
 
