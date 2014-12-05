@@ -6,5 +6,6 @@ defmodule OpenMirego.Repo.Resource do
     url: nil,
     pushed_at: nil,
     raw_pushed_at: nil,
-    fork: nil
+    fork: nil,
+    public: nil
 end
