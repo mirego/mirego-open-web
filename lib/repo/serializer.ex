@@ -6,6 +6,7 @@ defmodule OpenMirego.Repo.Serializer do
     mirego.github.io
     heroku-buildpack-bower
     RentThis-iOS
+    patch-patch
   )
 
   def serialize(%{"visible" => false}) do
