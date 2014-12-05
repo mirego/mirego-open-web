@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     hanzo (0.4.2)
       highline (>= 1.6.19)

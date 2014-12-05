@@ -1,3 +1,3 @@
-group :development do
-  gem 'hanzo'
-end
+source 'https://rubygems.org'
+
+gem 'hanzo', group: :development
