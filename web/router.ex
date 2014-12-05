@@ -10,5 +10,6 @@ defmodule OpenMirego.Router do
     pipe_through :browser
 
     get "/", OpenMirego.PageController, :index
+    get "/*path", OpenMirego.PageController, :show
   end
 end

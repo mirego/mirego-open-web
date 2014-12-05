@@ -9,6 +9,10 @@ defmodule OpenMirego.PageController do
     render conn, "index.html", repos: repos
   end
 
+  def show(conn, %{"path" => path}) do
+    redirect conn, external: "https://github.com/mirego/#{path}"
+  end
+
   def not_found(conn, _params) do
     render conn, "not_found.html"
   end
