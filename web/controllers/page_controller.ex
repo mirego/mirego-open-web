@@ -13,7 +13,7 @@ defmodule OpenMirego.PageController do
     repo = OpenMirego.Repo.Fetcher.fetch(path)
 
     # Make sure we only redirect to public repositories
-    if repo.public do
+    if repo.visible do
       redirect conn, external: repo.url
     else
       redirect conn, to: "/"

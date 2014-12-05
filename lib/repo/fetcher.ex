@@ -22,8 +22,7 @@ defmodule OpenMirego.Repo.Fetcher do
       %HTTPotion.Response{status_code: 200, body: body} ->
         body
       _error ->
-        # If we did not find any repository, assume a private one
-        "{\"private\":true}"
+        "{\"visible\":false}"
     end
   end
 
