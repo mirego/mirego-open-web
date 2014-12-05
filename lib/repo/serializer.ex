@@ -2,24 +2,13 @@ defmodule OpenMirego.Repo.Serializer do
   use Timex
   alias OpenMirego.Repo.Resource
 
-  @exclusions ~w(
-    mirego.github.io
-    heroku-buildpack-bower
-    RentThis-iOS
-  )
-
-  def serialize(json) do
-    json
-    |> Stream.reject(&reject?(&1))
-    |> Stream.map(&map(&1))
-    |> Enum.sort(&(&1.pushed_at < &2.pushed_at))
+  def serialize(%{"private" => true}) do
+    %Resource{
+      public: false
+    }
   end
 
-  defp reject?(%{"name" => name, "fork" => repo_is_a_fork}) do
-    repo_is_a_fork || Enum.member?(@exclusions, name)
-  end
-
-  defp map(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at, "fork" => fork}) do
+  def serialize(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at, "fork" => fork, "private" => private}) do
     %Resource{
       name: name,
       description: description,
@@ -28,7 +17,8 @@ defmodule OpenMirego.Repo.Serializer do
       url: html_url,
       fork: fork,
       raw_pushed_at: pushed_at,
-      pushed_at: parsed_time(pushed_at)
+      pushed_at: parsed_time(pushed_at),
+      public: !private
     }
   end
 

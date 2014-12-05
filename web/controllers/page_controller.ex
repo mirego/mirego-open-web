@@ -4,13 +4,20 @@ defmodule OpenMirego.PageController do
   plug :action
 
   def index(conn, _params) do
-    repos = OpenMirego.Repo.Fetcher.fetch
+    repos = OpenMirego.Repo.CollectionFetcher.fetch
 
     render conn, "index.html", repos: repos
   end
 
   def show(conn, %{"path" => path}) do
-    redirect conn, external: "https://github.com/mirego/#{path}"
+    repo = OpenMirego.Repo.Fetcher.fetch(path)
+
+    # Make sure we only redirect to public repositories
+    if repo.public do
+      redirect conn, external: repo.url
+    else
+      redirect conn, to: "/"
+    end
   end
 
   def not_found(conn, _params) do
