@@ -9,7 +9,7 @@ defmodule OpenMirego.Repo.Fetcher do
   end
 
   defp cached_body(repo) do
-    ConCache.get_or_store(:github, "#{@org}:repo:#{repo}", fn() ->
+    ConCache.get_or_store(:github, "#{GitHubConfiguration.organization}:repo:#{repo}", fn() ->
       body(repo)
     end)
   end
@@ -23,5 +23,5 @@ defmodule OpenMirego.Repo.Fetcher do
     end
   end
 
-  defp url(repo), do: "https://#{GitHubConfiguration.auth}@api.github.com/repos/#{GitHubConfiguration.org}/#{repo}"
+  defp url(repo), do: "https://#{GitHubConfiguration.authentication}@api.github.com/repos/#{GitHubConfiguration.organization}/#{repo}"
 end

@@ -9,7 +9,7 @@ defmodule OpenMirego.Repo.CollectionFetcher do
   end
 
   defp cached_body do
-    ConCache.get_or_store(:github, "#{@org}:repos", &body/0)
+    ConCache.get_or_store(:github, "#{GitHubConfiguration.organization}:repos", &body/0)
   end
 
   defp body do
@@ -21,5 +21,5 @@ defmodule OpenMirego.Repo.CollectionFetcher do
     end
   end
 
-  defp url, do: "https://#{GitHubConfiguration.auth}@api.github.com/orgs/#{GitHubConfiguration.org}/repos?type=public&per_page=100"
+  defp url, do: "https://#{GitHubConfiguration.authentication}@api.github.com/orgs/#{GitHubConfiguration.organization}/repos?type=public&per_page=100"
 end
