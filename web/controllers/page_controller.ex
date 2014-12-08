@@ -1,22 +1,21 @@
 defmodule OpenMirego.PageController do
   use Phoenix.Controller
+  alias OpenMirego.Repo.Resource
+  import OpenMirego.Router.Helpers
 
   plug :action
 
   def index(conn, _params) do
-    repos = OpenMirego.Repo.CollectionFetcher.fetch
-
-    render conn, "index.html", repos: repos
+    conn
+    |> assign(:repos, OpenMirego.Repo.CollectionFetcher.fetch)
+    |> render "index.html"
   end
 
   def show(conn, %{"path" => path}) do
-    repo = OpenMirego.Repo.Fetcher.fetch(path)
-
     # Make sure we only redirect to public repositories
-    if repo.visible do
-      redirect conn, external: repo.url
-    else
-      redirect conn, to: "/"
+    case OpenMirego.Repo.Fetcher.fetch(path) do
+      %Resource{visible: true, url: url} -> redirect(conn, external: url)
+      _ -> redirect(conn, to: page_path(:index))
     end
   end
 
