@@ -34,6 +34,11 @@
       </header>
 
       <%= @inner %>
+
     </div>
+
+    <footer>
+      Built with ♥ by <a href="http://www.mirego.com/en">Mirego</a>. Powered by <a href="http://elixir-lang.org">Elixir</a> + <a href="http://www.phoenixframework.org/">Phoenix</a>.
+    </footer>
   </body>
 </html>
