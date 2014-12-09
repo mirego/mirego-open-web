@@ -7,5 +7,5 @@ defmodule OpenMirego.Repo.Resource do
     pushed_at: nil,
     raw_pushed_at: nil,
     fork: nil,
-    visible: nil
+    visible: true
 end

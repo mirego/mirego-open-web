@@ -10,23 +10,27 @@ defmodule OpenMirego.Repo.Serializer do
     Feedback-iOS
   )
 
-  def serialize(%{"visible" => false}) do
-    %Resource{
-      visible: false
-    }
+  for name <- @hidden_repos do
+    def serialize(%{"name" => unquote(name)}) do
+      %Resource{visible: false}
+    end
   end
 
-  def serialize(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at, "fork" => fork, "private" => private}) do
+  # If the resource is not visible, is a fork, and/or is private: Mark it as {visible: false}
+  def serialize(%{"visible" => false}), do: %Resource{visible: false}
+  def serialize(%{"fork" => true}),     do: %Resource{visible: false}
+  def serialize(%{"private" => true}),  do: %Resource{visible: false}
+
+  def serialize(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at}) do
     %Resource{
       name: name,
       description: description,
       language: parsed_language(language),
       pretty_language: parsed_pretty_language(language),
       url: html_url,
-      fork: fork,
       raw_pushed_at: pushed_at,
       pushed_at: parsed_time(pushed_at),
-      visible: !private && !fork && !Enum.member?(@hidden_repos, name)
+      visible: true
     }
   end
 
