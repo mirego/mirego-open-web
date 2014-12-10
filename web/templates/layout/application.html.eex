@@ -38,7 +38,7 @@
     </div>
 
     <footer>
-      Built with ♥ by <a href="http://www.mirego.com/en">Mirego</a>. Powered by <a href="http://elixir-lang.org">Elixir</a> + <a href="http://www.phoenixframework.org/">Phoenix</a>.
+      <a href="https://github.com/mirego/mirego-open-web">Built</a> with ♥ by <a href="http://www.mirego.com/en">Mirego</a>. Powered by <a href="http://elixir-lang.org">Elixir</a> + <a href="http://www.phoenixframework.org/">Phoenix</a>.
     </footer>
 
     <%= if google_analytics_tracker_id do %>
