@@ -17,6 +17,9 @@ config :phoenix, OpenMirego.Router,
 config :github, OpenMirego.Router,
   api_key: System.get_env("GITHUB_API_KEY")
 
+config :google_analytics, OpenMirego.Router,
+  tracker_id: System.get_env("GOOGLE_ANALYTICS_TRACKER_ID")
+
 # Session configuration
 config :phoenix, OpenMirego.Router,
   session: [store: :cookie,
