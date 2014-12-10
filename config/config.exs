@@ -9,7 +9,7 @@ use Mix.Config
 config :phoenix, OpenMirego.Router,
   url: [host: "localhost"],
   http: [port: System.get_env("PORT")],
-  secret_key_base: "VudCNV+dUpp13UIIERCct4JORo1zRNmQxHa24VozIB+v7BXzcW2p8lcxWEahemqCZizYsmkbDHd5GdCLoQoLiw==",
+  secret_key_base: System.get_env("SECRET_KEY_BASE"),
   catch_errors: true,
   debug_errors: false,
   error_controller: OpenMirego.PageController

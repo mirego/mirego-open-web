@@ -12,10 +12,8 @@ use Mix.Config
 # disk for the key and cert.
 
 config :phoenix, OpenMirego.Router,
-  http: [port: System.get_env("PORT")],
   ssl: false,
-  host: System.get_env("CANONICAL_HOST"),
-  secret_key_base: System.get_env("SECRET_KEY_BASE")
+  host: System.get_env("CANONICAL_HOST")
 
 config :logger,
   level: :info

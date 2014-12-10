@@ -10,6 +10,24 @@ Now you can visit `localhost:4000` from your browser.
 ## Environment variables
 
 ```
+## Mandatory environment variables for all environments
+
 # GitHub authentication token to make API requests
 GITHUB_API_KEY=
+
+# Secret token
+SECRET_KEY_BASE=
+
+## Mandatory environment variables for prod environment
+
+# Listening on this port
+PORT=
+
+## Optional environment variables
+
+# Google Analytics tracker ID
+GOOGLE_ANALYTICS_TRACKER_ID=
+
+# Canonical URL settings
+CANONICAL_HOST=
 ```
