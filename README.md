@@ -12,4 +12,7 @@ Now you can visit `localhost:4000` from your browser.
 ```
 # GitHub authentication token to make API requests
 GITHUB_API_KEY=
+
+# Google Analytics tracker ID
+GOOGLE_ANALYTICS_TRACKER_ID=
 ```
