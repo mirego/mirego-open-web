@@ -8,6 +8,9 @@ defmodule OpenMirego.Repo.Serializer do
     RentThis-iOS
     patch-patch
     Feedback-iOS
+    ember-foreigner
+    ember-encore
+    mirego-open-web
   )
 
   for name <- @hidden_repos do
