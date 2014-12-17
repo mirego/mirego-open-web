@@ -11,8 +11,7 @@ config :phoenix, OpenMirego.Router,
   http: [port: System.get_env("PORT")],
   secret_key_base: "VudCNV+dUpp13UIIERCct4JORo1zRNmQxHa24VozIB+v7BXzcW2p8lcxWEahemqCZizYsmkbDHd5GdCLoQoLiw==",
   catch_errors: true,
-  debug_errors: false,
-  error_controller: OpenMirego.PageController
+  debug_errors: false
 
 config :github, OpenMirego.Router,
   api_key: System.get_env("GITHUB_API_KEY")
