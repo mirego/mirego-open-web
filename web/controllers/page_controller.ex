@@ -18,12 +18,4 @@ defmodule OpenMirego.PageController do
       _ -> redirect(conn, to: page_path(:index))
     end
   end
-
-  def not_found(conn, _params) do
-    render conn, "not_found.html"
-  end
-
-  def error(conn, _params) do
-    render conn, "error.html"
-  end
 end
