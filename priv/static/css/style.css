@@ -226,6 +226,15 @@ dl.java dt a:hover:before {
   background-color: rgba(231, 103, 11, 0.8);
 }
 
+dl.css dt a:before {
+  content: 'css';
+  background-color: rgba(3, 93, 169, 1);
+}
+
+dl.css dt a:hover:before {
+  background-color: rgba(3, 93, 169, 0.8);
+}
+
 dd {
   font-style: italic;
   font-size: 90%;
