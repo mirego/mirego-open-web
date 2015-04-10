@@ -5,12 +5,12 @@
 # is restricted to this project.
 use Mix.Config
 
-# Configures the router
-config :phoenix, OpenMirego.Router,
-  url: [host: "localhost"],
+# Configures the endpoint
+config :open_mirego, OpenMirego.Endpoint,
+  root: Path.expand("..", __DIR__),
   http: [port: System.get_env("PORT")],
+  url: [host: System.get_env("CANONICAL_HOST") || "localhost"],
   secret_key_base: System.get_env("SECRET_KEY_BASE"),
-  catch_errors: true,
   debug_errors: false
 
 config :github, OpenMirego.Router,
@@ -18,11 +18,6 @@ config :github, OpenMirego.Router,
 
 config :google_analytics, OpenMirego.Router,
   tracker_id: System.get_env("GOOGLE_ANALYTICS_TRACKER_ID")
-
-# Session configuration
-config :phoenix, OpenMirego.Router,
-  session: [store: :cookie,
-            key: "_open_mirego_key"]
 
 # Configures Elixir's Logger
 config :logger, :console,
