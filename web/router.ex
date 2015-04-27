@@ -2,14 +2,14 @@ defmodule OpenMirego.Router do
   use Phoenix.Router
 
   pipeline :browser do
-    plug :accepts, ~w(html)
     plug :fetch_session
+    plug :accepts, ["html"]
   end
 
-  scope "/" do
+  scope "/", OpenMirego do
     pipe_through :browser
 
-    get "/", OpenMirego.PageController, :index
-    get "/*path", OpenMirego.PageController, :show
+    get "/", PageController, :index
+    get "/*path", PageController, :show
   end
 end

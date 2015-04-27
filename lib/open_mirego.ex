@@ -7,8 +7,8 @@ defmodule OpenMirego do
     import Supervisor.Spec, warn: false
 
     children = [
-      worker(
-        ConCache, [
+      supervisor(OpenMirego.Endpoint, []),
+      worker(ConCache, [
           [ttl_check: :timer.seconds(1), ttl: :timer.seconds(300)],
           [name: :github]
         ]
@@ -19,5 +19,12 @@ defmodule OpenMirego do
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: OpenMirego.Supervisor]
     Supervisor.start_link(children, opts)
+  end
+
+  # Tell Phoenix to update the endpoint configuration
+  # whenever the application is updated.
+  def config_change(changed, _new, removed) do
+    OpenMirego.Endpoint.config_change(changed, removed)
+    :ok
   end
 end

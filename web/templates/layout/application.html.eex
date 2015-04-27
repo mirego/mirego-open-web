@@ -6,8 +6,8 @@
     <title>Open Source @ Mirego</title>
 
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:light,regular,bold,italic&v1">
-    <link rel="stylesheet" type="text/css" href="/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<%= static_path(@conn, "/css/reset.css") %>">
+    <link rel="stylesheet" type="text/css" href="<%= static_path(@conn, "/css/style.css") %>">
     <link rel="icon" type="image/png" href="/images/ico-favicon.png">
 
     <script type="text/javascript" src="//use.typekit.net/fgt8cwf.js"></script>
