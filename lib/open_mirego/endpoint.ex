@@ -24,8 +24,7 @@ defmodule OpenMirego.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_open_mirego_key",
-    signing_salt: "1fg9WFQqwf",
-    encryption_salt: "h0f1Qw+3"
+    signing_salt: OpenMirego.Mixfile.signing_salt
 
   plug :router, OpenMirego.Router
 end
