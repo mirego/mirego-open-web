@@ -2,7 +2,6 @@ defmodule OpenMirego.Router do
   use Phoenix.Router
 
   pipeline :browser do
-    plug :fetch_session
     plug :accepts, ["html"]
   end
 

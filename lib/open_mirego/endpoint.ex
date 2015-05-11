@@ -21,10 +21,5 @@ defmodule OpenMirego.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
 
-  plug Plug.Session,
-    store: :cookie,
-    key: "_open_mirego_key",
-    signing_salt: OpenMirego.Mixfile.signing_salt
-
   plug :router, OpenMirego.Router
 end

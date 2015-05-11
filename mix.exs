@@ -22,14 +22,11 @@ defmodule OpenMirego.Mixfile do
      applications: [:phoenix, :cowboy, :logger, :httpotion, :con_cache]]
   end
 
-  def signing_salt, do: System.get_env("SIGNING_SALT")
-
   # Specifies your project dependencies
   #
   # Type `mix help deps` for examples and options
   defp deps do
     [{:phoenix, "~> 0.11"},
-     {:plug, "~> 0.12.1", override: true},
      {:con_cache, "~> 0.6.1"},
      {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.1"},
      {:httpotion, "~> 0.2.0"},
