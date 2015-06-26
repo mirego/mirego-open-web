@@ -184,6 +184,29 @@ dl dt a:before {
   transition: background-color 0.1s ease, color 0.2s ease;
 }
 
+dl dt a small {
+  color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  border-radius: 2px;
+  margin: 0 4px 0 0;
+  vertical-align: middle;
+  padding: 2px 4px 1px;
+  font-size: 60%;
+  text-transform: uppercase;
+  font-family: brandon-grotesque, sans-serif;
+  -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+  -moz-transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.1s ease, color 0.2s ease;
+}
+
+dl dt a:hover small {
+  color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.075);
+}
+
 dl dt a:hover:before {
   color: rgba(255, 255, 255, 0.8);
 }

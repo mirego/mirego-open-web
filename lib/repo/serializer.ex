@@ -24,7 +24,7 @@ defmodule OpenMirego.Repo.Serializer do
   def serialize(%{"fork" => true}),     do: %Resource{visible: false}
   def serialize(%{"private" => true}),  do: %Resource{visible: false}
 
-  def serialize(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at}) do
+  def serialize(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at, "stargazers_count" => stargazers_count}) do
     %Resource{
       name: name,
       description: description,
@@ -33,6 +33,7 @@ defmodule OpenMirego.Repo.Serializer do
       url: html_url,
       raw_pushed_at: pushed_at,
       pushed_at: parsed_time(pushed_at),
+      stargazers_count: stargazers_count,
       visible: true
     }
   end
