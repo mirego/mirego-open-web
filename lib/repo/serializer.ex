@@ -3,27 +3,34 @@ defmodule OpenMirego.Repo.Serializer do
   alias OpenMirego.Repo.Resource
 
   @hidden_repos ~w(
-    mirego.github.io
     heroku-buildpack-bower
     RentThis-iOS
-    patch-patch
     Feedback-iOS
-    ember-foreigner
-    ember-encore
     mirego-open-web
   )
 
+  @deprecated_repo_description "[Deprecated]"
+
+  # Hide specific repositories
   for name <- @hidden_repos do
     def serialize(%{"name" => unquote(name)}) do
       %Resource{visible: false}
     end
   end
 
-  # If the resource is not visible, is a fork, and/or is private: Mark it as {visible: false}
+  # Hide it if it’s not visible
   def serialize(%{"visible" => false}), do: %Resource{visible: false}
-  def serialize(%{"fork" => true}),     do: %Resource{visible: false}
-  def serialize(%{"private" => true}),  do: %Resource{visible: false}
 
+  # Hide it if it’s a fork
+  def serialize(%{"fork" => true}), do: %Resource{visible: false}
+
+  # Hide it if it’s a private repo
+  def serialize(%{"private" => true}), do: %Resource{visible: false}
+
+  # Hide it if it’s a deprecated repo
+  def serialize(%{"description" => @deprecated_repo_description <> _}), do: %Resource{visible: false}
+
+  # Otherwise, return a resource
   def serialize(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at, "stargazers_count" => stargazers_count}) do
     %Resource{
       name: name,
