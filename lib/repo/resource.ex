@@ -7,5 +7,6 @@ defmodule OpenMirego.Repo.Resource do
     pushed_at: nil,
     raw_pushed_at: nil,
     fork: nil,
+    stargazers_count: nil,
     visible: true
 end

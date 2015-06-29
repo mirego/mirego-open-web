@@ -4,6 +4,7 @@
       <dl class="<%= repo.language %>">
         <dt>
           <a href=<%= repo.url %> target="_blank">
+            <small><%= repo.stargazers_count %> ★</small>
             <%= repo.name %>
           </a>
         </dt>
