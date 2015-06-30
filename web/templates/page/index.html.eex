@@ -1,6 +1,6 @@
 <section id="content">
   <div class="inner-content">
-    <%= Enum.map @repos, fn (repo)-> %>
+    <%= Enum.map assigns[:repos], fn (repo)-> %>
       <dl class="<%= repo.language %>">
         <dt>
           <a href=<%= repo.url %> target="_blank">
