@@ -2,8 +2,6 @@ defmodule OpenMirego.PageController do
   use OpenMirego.Web, :controller
   alias OpenMirego.Repo.Resource
 
-  plug :action
-
   def index(conn, _params) do
     conn
     |> assign(:repos, OpenMirego.Repo.CollectionFetcher.fetch)
