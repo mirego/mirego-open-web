@@ -26,8 +26,8 @@ defmodule OpenMirego.Mixfile do
   #
   # Type `mix help deps` for examples and options
   defp deps do
-    [{:phoenix, "~> 0.14"},
-     {:phoenix_html, "~> 1.1"},
+    [{:phoenix, "~> 1.0"},
+     {:phoenix_html, "~> 2.0"},
      {:con_cache, "~> 0.6.1"},
      {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.1"},
      {:httpotion, "~> 0.2.0"},

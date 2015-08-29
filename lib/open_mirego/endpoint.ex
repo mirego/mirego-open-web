@@ -21,5 +21,5 @@ defmodule OpenMirego.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
 
-  plug :router, OpenMirego.Router
+  plug OpenMirego.Router
 end
