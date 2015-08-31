@@ -9,7 +9,7 @@ defmodule OpenMirego do
     children = [
       supervisor(OpenMirego.Endpoint, []),
       worker(ConCache, [
-          [ttl_check: :timer.seconds(1), ttl: :timer.seconds(300)],
+          [ttl_check: :timer.seconds(60), ttl: :timer.seconds(300)],
           [name: :github]
         ]
       )
