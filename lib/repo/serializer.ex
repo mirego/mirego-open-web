@@ -64,6 +64,7 @@ defmodule OpenMirego.Repo.Serializer do
   defp parsed_time(time) do
     {:ok, date} = DateFormat.parse(time, "{ISOz}")
 
-    Time.now(:secs) - Date.convert(date, :secs)
+    date_secs = date |> Date.to_secs
+    Time.now(:secs) - date_secs
   end
 end

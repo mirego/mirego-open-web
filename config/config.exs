@@ -13,10 +13,10 @@ config :open_mirego, OpenMirego.Endpoint,
   secret_key_base: System.get_env("SECRET_KEY_BASE"),
   debug_errors: false
 
-config :github, OpenMirego.Router,
+config :open_mirego, OpenMirego.GitHubConfiguration,
   api_key: System.get_env("GITHUB_API_KEY")
 
-config :google_analytics, OpenMirego.Router,
+config :open_mirego, OpenMirego.GoogleAnalytics,
   tracker_id: System.get_env("GOOGLE_ANALYTICS_TRACKER_ID")
 
 # Configures Elixir's Logger
