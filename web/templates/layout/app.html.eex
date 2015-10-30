@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="<%= static_path(assigns[:conn], "/css/style.css") %>">
     <link rel="icon" type="image/png" href="/images/ico-favicon.png">
 
-    <script type="text/javascript" src="//use.typekit.net/fgt8cwf.js"></script>
+    <script type="text/javascript" src="//use.typekit.net/<%= typekit_kit_id %>.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>

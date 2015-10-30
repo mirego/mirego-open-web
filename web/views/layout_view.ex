@@ -4,4 +4,8 @@ defmodule OpenMirego.LayoutView do
   def google_analytics_tracker_id do
     Application.get_env(:open_mirego, OpenMirego.GoogleAnalytics)[:tracker_id]
   end
+
+  def typekit_kit_id do
+    Application.get_env(:open_mirego, OpenMirego.Typekit)[:kit_id]
+  end
 end

@@ -19,6 +19,9 @@ config :open_mirego, OpenMirego.GitHubConfiguration,
 config :open_mirego, OpenMirego.GoogleAnalytics,
   tracker_id: System.get_env("GOOGLE_ANALYTICS_TRACKER_ID")
 
+config :open_mirego, OpenMirego.Typekit,
+  kit_id: System.get_env("TYPEKIT_KIT_ID")
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
