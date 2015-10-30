@@ -1,15 +1,12 @@
 <section id="content">
-  <div class="inner-content">
-    <%= Enum.map assigns[:repos], fn (repo)-> %>
-      <dl class="<%= repo.language %>">
-        <dt>
-          <a href=<%= repo.url %> target="_blank">
-            <small><%= repo.stargazers_count %> ★</small>
-            <%= repo.name %>
-          </a>
-        </dt>
-        <dd><%= repo.description %></dd>
-      </dl>
-    <% end %>
-  </div>
+  <%= Enum.map assigns[:repos], fn (repo)-> %>
+    <a href=<%= repo.url %> class="repo repo--language-<%= repo.language %>" target="_blank">
+      <div class="repo-header">
+        <span class="repo-header-language"><%= repo.pretty_language %></span>
+        <span class="repo-header-stars"><%= repo.stargazers_count %> ★</span>
+        <span class="repo-name"><%= repo.name %></span>
+      </div>
+      <div class="repo-description"><%= repo.description %></div>
+    </a>
+  <% end %>
 </section>
