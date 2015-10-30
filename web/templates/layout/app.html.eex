@@ -16,6 +16,11 @@
   <body>
     <div id="wrap">
       <header>
+        <div class="header-content">
+          <h1><a href="https://github.com/mirego">Open Source</a> @ <a href="http://www.mirego.com"><strong>Mirego</strong></a></h1>
+          <h2>We hope these lines of codes will be useful and help you build great products.</h2>
+        </div>
+
         <div class='m'>
           <a href="javascript://"><strong><img alt="" src="/images/ico-m.png" width="20" /></strong></a>
           <span><img alt="" src="/images/bg-m.png" width="62" /></span>
@@ -27,10 +32,6 @@
             <li class='active'><a href="http://open.mirego.com">Code</a></li>
           </ul>
         </div>
-        <div>
-          <h1><a href="https://github.com/mirego">Open Source</a> <span>@</span> <a href="http://mirego.com">Mirego</a></h1>
-          <h2>We hope these lines of codes will be useful and help you build great products.</h2>
-        </div><small></small>
       </header>
 
       <%= assigns[:inner] %>
