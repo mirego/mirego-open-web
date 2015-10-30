@@ -307,12 +307,12 @@ footer a {
     width: 100%;
   }
 
-  dl {
+  .repo {
     width: 49.5%;
     margin-right: 1% !important;
   }
 
-  dl:nth-child(2n) {
+  .repo:nth-child(2n) {
     margin-right: 0 !important;
   }
 }
@@ -354,7 +354,7 @@ footer a {
     padding: 0;
   }
 
-  dl {
+  .repo {
     height: auto;
     width: 100%;
     margin-right: 0 !important;
