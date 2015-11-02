@@ -4,7 +4,7 @@
       <div class="repo-header">
         <span class="repo-header-language"><%= repo.pretty_language %></span>
         <span class="repo-header-stars"><%= repo.stargazers_count %> ★</span>
-        <span class="repo-name"><%= repo.name %></span>
+        <span class="repo-header-name"><%= repo.name %></span>
       </div>
       <div class="repo-description"><%= repo.description %></div>
     </a>
