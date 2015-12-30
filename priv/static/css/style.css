@@ -315,9 +315,7 @@ footer a {
   .repo:nth-child(2n) {
     margin-right: 0 !important;
   }
-}
 
-@media only screen and (max-width: 480px) {
   .m {
     top: 0;
     right: 0;
@@ -336,7 +334,9 @@ footer a {
   .m > span {
     display: none;
   }
+}
 
+@media only screen and (max-width: 480px) {
   header {
     height: 140px;
   }
