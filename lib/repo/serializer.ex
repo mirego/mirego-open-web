@@ -34,7 +34,7 @@ defmodule OpenMirego.Repo.Serializer do
   def serialize(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at, "stargazers_count" => stargazers_count}) do
     %Resource{
       name: name,
-      description: description,
+      description: sanitize_description(description),
       language: parsed_language(language),
       pretty_language: parsed_pretty_language(language),
       url: html_url,
@@ -44,6 +44,9 @@ defmodule OpenMirego.Repo.Serializer do
       visible: true
     }
   end
+
+  # Remove prefix emoji shortname from description
+  defp sanitize_description(description), do: Regex.replace(~r/^:[^:]+:\s*/, description, "")
 
   defp parsed_language("Objective-C"), do: "pod"
   defp parsed_language("Ruby"),        do: "gem"
