@@ -4,7 +4,7 @@ defmodule OpenMirego.Mixfile do
   def project do
     [app: :open_mirego,
      version: "0.0.1",
-     elixir: "~> 1.1.0",
+     elixir: "~> 1.2.0",
      elixirc_paths: ["lib", "web"],
      compilers: [:phoenix] ++ Mix.compilers,
      elixirc_paths: elixirc_paths(Mix.env),
