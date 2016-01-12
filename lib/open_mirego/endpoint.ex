@@ -2,7 +2,7 @@ defmodule OpenMirego.Endpoint do
   use Phoenix.Endpoint, otp_app: :open_mirego
 
   # Always serve requests from a single canonical host
-  plug PlugCanonicalHost, canonical_host: Application.get_env(:open_mirego, OpenMirego.Endpoint)[:url][:host]
+  plug PlugCanonicalHost, canonical_host: get_in(Application.get_env(:open_mirego, OpenMirego.Endpoint), [:url, :host])
 
   # Serve at "/" the given assets from "priv/static" directory
   plug Plug.Static,
