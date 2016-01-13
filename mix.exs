@@ -32,7 +32,6 @@ defmodule OpenMirego.Mixfile do
      {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.2"},
      {:httpotion, "~> 0.2.0"},
      {:timex, "~> 0.19.0"},
-     {:plug_canonical_host, "~> 0.2.0"},
      {:cowboy, "~> 1.0"}]
   end
 
