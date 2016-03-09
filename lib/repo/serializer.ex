@@ -53,14 +53,16 @@ defmodule OpenMirego.Repo.Serializer do
   defp parsed_language("JavaScript"),  do: "js"
   defp parsed_language("CSS"),         do: "css"
   defp parsed_language("Java"),        do: "java"
+  defp parsed_language("Swift"),       do: "swift"
   defp parsed_language(nil),           do: "none"
   defp parsed_language(lang),          do: lang
 
-  defp parsed_pretty_language("Objective-C"), do: "iOS"
+  defp parsed_pretty_language("Objective-C"), do: "Obj-C"
   defp parsed_pretty_language("Ruby"),        do: "Ruby"
   defp parsed_pretty_language("JavaScript"),  do: "JS"
   defp parsed_pretty_language("CSS"),         do: "CSS"
   defp parsed_pretty_language("Java"),        do: "Java"
+  defp parsed_pretty_language("Swift"),       do: "Swift"
   defp parsed_pretty_language(nil),           do: ""
   defp parsed_pretty_language(lang),          do: lang
 

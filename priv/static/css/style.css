@@ -168,6 +168,14 @@ a {
   background-color: rgba(3, 93, 169, 0.8);
 }
 
+.repo--language-swift .repo-header-language {
+  background-color: rgba(255, 157, 43, 1);
+}
+
+.repo--language-swift:hover .repo-header-language {
+  background-color: rgba(255, 157, 43, 0.8);
+}
+
 .repo--language-none .repo-header-language {
   display: none;
 }
