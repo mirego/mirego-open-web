@@ -54,6 +54,7 @@ defmodule OpenMirego.Repo.Serializer do
   defp parsed_language("CSS"),         do: "css"
   defp parsed_language("Java"),        do: "java"
   defp parsed_language("Swift"),       do: "swift"
+  defp parsed_language("Shell"),       do: "shell"
   defp parsed_language(nil),           do: "none"
   defp parsed_language(lang),          do: lang
 
@@ -63,6 +64,7 @@ defmodule OpenMirego.Repo.Serializer do
   defp parsed_pretty_language("CSS"),         do: "CSS"
   defp parsed_pretty_language("Java"),        do: "Java"
   defp parsed_pretty_language("Swift"),       do: "Swift"
+  defp parsed_pretty_language("Shell"),       do: "Shell"
   defp parsed_pretty_language(nil),           do: ""
   defp parsed_pretty_language(lang),          do: lang
 
