@@ -46,6 +46,7 @@ defmodule OpenMirego.Repo.Serializer do
   end
 
   # Remove prefix emoji shortname from description
+  defp sanitize_description(nil), do: ""
   defp sanitize_description(description), do: Regex.replace(~r/^:[^:]+:\s*/, description, "")
 
   defp parsed_language("Objective-C"), do: "pod"
