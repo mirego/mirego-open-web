@@ -10,6 +10,7 @@ defmodule OpenMirego.Repo.Serializer do
   )
 
   @deprecated_repo_description "[Deprecated]"
+  @fork_repo_description "[Fork]"
 
   # Hide specific repositories
   for name <- @hidden_repos do
@@ -29,6 +30,9 @@ defmodule OpenMirego.Repo.Serializer do
 
   # Hide it if it’s a deprecated repo
   def serialize(%{"description" => @deprecated_repo_description <> _}), do: %Resource{visible: false}
+
+  # Hide it if it’s a fake-fork repo
+  def serialize(%{"description" => @fork_repo_description <> _}), do: %Resource{visible: false}
 
   # Otherwise, return a resource
   def serialize(%{"name" => name, "description" => description, "language" => language, "html_url" => html_url, "pushed_at" => pushed_at, "stargazers_count" => stargazers_count}) do
