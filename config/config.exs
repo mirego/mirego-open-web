@@ -5,6 +5,12 @@
 # is restricted to this project.
 use Mix.Config
 
+defmodule Utilities do
+  def string_to_boolean("true"), do: true
+  def string_to_boolean("1"), do: true
+  def string_to_boolean(_), do: false
+end
+
 # Configures the endpoint
 config :open_mirego, OpenMirego.Endpoint,
   root: Path.expand("..", __DIR__),
@@ -21,6 +27,8 @@ config :open_mirego, OpenMirego.GoogleAnalytics,
 
 config :open_mirego, OpenMirego.Typekit,
   kit_id: System.get_env("TYPEKIT_KIT_ID")
+
+config :open_mirego, force_ssl: Utilities.string_to_boolean(System.get_env("FORCE_SSL"))
 
 # Configures Elixir's Logger
 config :logger, :console,
