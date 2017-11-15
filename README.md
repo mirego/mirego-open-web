@@ -30,6 +30,9 @@ GOOGLE_ANALYTICS_TRACKER_ID=
 
 # Canonical URL settings
 CANONICAL_HOST=
+
+# Force HTTPS requests
+FORCE_SSL=
 ```
 
 ## License

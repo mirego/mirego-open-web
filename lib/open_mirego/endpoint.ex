@@ -4,6 +4,11 @@ defmodule OpenMirego.Endpoint do
   # Always serve requests from a single canonical host
   plug PlugCanonicalHost, canonical_host: get_in(Application.get_env(:open_mirego, OpenMirego.Endpoint), [:url, :host])
 
+  # Force SSL
+  if Application.get_env(:open_mirego, :force_ssl) do
+    plug Plug.SSL, rewrite_on: [:x_forwarded_proto]
+  end
+
   # Serve at "/" the given assets from "priv/static" directory
   plug Plug.Static,
     at: "/", from: :open_mirego,
