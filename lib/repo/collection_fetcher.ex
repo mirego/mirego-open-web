@@ -33,6 +33,6 @@ defmodule OpenMirego.Repo.CollectionFetcher do
     end
   end
 
-  defp base_url, do: "#{base_protocol}api.github.com/orgs/#{GitHubConfiguration.organization}/repos?type=public&per_page=50"
+  defp base_url, do: "#{base_protocol}api.github.com/orgs/#{GitHubConfiguration.organization}/repos?type=sources&per_page=50"
   defp base_protocol, do: "https://#{GitHubConfiguration.authentication}@"
 end
