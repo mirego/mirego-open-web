@@ -53,23 +53,27 @@ defmodule OpenMirego.Repo.Serializer do
   defp sanitize_description(nil), do: ""
   defp sanitize_description(description), do: Regex.replace(~r/^:[^:]+:\s*/, description, "")
 
+  defp parsed_language("CSS"),         do: "css"
+  defp parsed_language("Elixir"),      do: "elixir"
+  defp parsed_language("Java"),        do: "java"
+  defp parsed_language("JavaScript"),  do: "js"
   defp parsed_language("Objective-C"), do: "pod"
   defp parsed_language("Ruby"),        do: "gem"
-  defp parsed_language("JavaScript"),  do: "js"
-  defp parsed_language("CSS"),         do: "css"
-  defp parsed_language("Java"),        do: "java"
-  defp parsed_language("Swift"),       do: "swift"
   defp parsed_language("Shell"),       do: "shell"
+  defp parsed_language("Swift"),       do: "swift"
+  defp parsed_language("TypeScript"),  do: "typescript"
   defp parsed_language(nil),           do: "none"
   defp parsed_language(lang),          do: lang
 
+  defp parsed_pretty_language("CSS"),         do: "CSS"
+  defp parsed_pretty_language("Elixir"),      do: "Elixir"
+  defp parsed_pretty_language("Java"),        do: "Java"
+  defp parsed_pretty_language("JavaScript"),  do: "JS"
   defp parsed_pretty_language("Objective-C"), do: "Obj-C"
   defp parsed_pretty_language("Ruby"),        do: "Ruby"
-  defp parsed_pretty_language("JavaScript"),  do: "JS"
-  defp parsed_pretty_language("CSS"),         do: "CSS"
-  defp parsed_pretty_language("Java"),        do: "Java"
-  defp parsed_pretty_language("Swift"),       do: "Swift"
   defp parsed_pretty_language("Shell"),       do: "Shell"
+  defp parsed_pretty_language("Swift"),       do: "Swift"
+  defp parsed_pretty_language("TypeScript"),  do: "TypeScript"
   defp parsed_pretty_language(nil),           do: ""
   defp parsed_pretty_language(lang),          do: lang
 
