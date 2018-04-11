@@ -184,6 +184,22 @@ a {
   background-color: rgba(119, 224, 55, 0.8);
 }
 
+.repo--language-typescript .repo-header-language {
+  background-color: rgba(19, 124, 201, 1);
+}
+
+.repo--language-typescript:hover .repo-header-language {
+  background-color: rgba(19, 124, 201, 0.8);
+}
+
+.repo--language-elixir .repo-header-language {
+  background-color: rgba(74, 34, 93, 1);
+}
+
+.repo--language-elixir:hover .repo-header-language {
+  background-color: rgba(74, 34, 93, 0.8);
+}
+
 .repo--language-none .repo-header-language {
   display: none;
 }
