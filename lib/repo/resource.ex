@@ -5,7 +5,6 @@ defmodule OpenMirego.Repo.Resource do
     pretty_language: nil,
     url: nil,
     pushed_at: nil,
-    raw_pushed_at: nil,
     fork: nil,
     stargazers_count: nil,
     visible: true

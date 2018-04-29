@@ -42,7 +42,6 @@ defmodule OpenMirego.Repo.Serializer do
       language: parsed_language(language),
       pretty_language: parsed_pretty_language(language),
       url: html_url,
-      raw_pushed_at: pushed_at,
       pushed_at: parsed_time(pushed_at),
       stargazers_count: stargazers_count,
       visible: true
@@ -57,6 +56,7 @@ defmodule OpenMirego.Repo.Serializer do
   defp parsed_language("Elixir"),      do: "elixir"
   defp parsed_language("Java"),        do: "java"
   defp parsed_language("JavaScript"),  do: "js"
+  defp parsed_language("Kotlin"),      do: "kotlin"
   defp parsed_language("Objective-C"), do: "pod"
   defp parsed_language("Ruby"),        do: "gem"
   defp parsed_language("Shell"),       do: "shell"
@@ -69,6 +69,7 @@ defmodule OpenMirego.Repo.Serializer do
   defp parsed_pretty_language("Elixir"),      do: "Elixir"
   defp parsed_pretty_language("Java"),        do: "Java"
   defp parsed_pretty_language("JavaScript"),  do: "JS"
+  defp parsed_pretty_language("Kotlin"),      do: "Kotlin"
   defp parsed_pretty_language("Objective-C"), do: "Obj-C"
   defp parsed_pretty_language("Ruby"),        do: "Ruby"
   defp parsed_pretty_language("Shell"),       do: "Shell"
@@ -78,9 +79,9 @@ defmodule OpenMirego.Repo.Serializer do
   defp parsed_pretty_language(lang),          do: lang
 
   defp parsed_time(time) do
-    {:ok, date} = DateFormat.parse(time, "{ISOz}")
-
-    date_secs = date |> Date.to_secs
-    Time.now(:secs) - date_secs
+    time
+    |> Timex.parse!("{ISO:Extended:Z}")
+    |> Timex.format!("{s-epoch}")
+    |> String.to_integer()
   end
 end

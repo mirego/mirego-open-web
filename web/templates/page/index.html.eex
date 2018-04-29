@@ -1,5 +1,5 @@
 <section id="content">
-  <%= Enum.map assigns[:repos], fn (repo)-> %>
+  <%= Enum.map @conn.assigns[:repos], fn (repo)-> %>
     <a href=<%= repo.url %> class="repo repo--language-<%= repo.language %>" target="_blank">
       <div class="repo-header">
         <span class="repo-header-language"><%= repo.pretty_language %></span>

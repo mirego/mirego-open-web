@@ -4,7 +4,7 @@ defmodule OpenMirego.Mixfile do
   def project do
     [app: :open_mirego,
      version: "0.0.1",
-     elixir: "~> 1.2.0",
+     elixir: "~> 1.6.0",
      elixirc_paths: ["lib", "web"],
      compilers: [:phoenix] ++ Mix.compilers,
      elixirc_paths: elixirc_paths(Mix.env),
@@ -19,19 +19,19 @@ defmodule OpenMirego.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [mod: {OpenMirego, []},
-     applications: [:phoenix, :cowboy, :logger, :httpotion, :con_cache]]
+     applications: [:phoenix, :cowboy, :logger, :httpotion, :con_cache, :timex]]
   end
 
   # Specifies your project dependencies
   #
   # Type `mix help deps` for examples and options
   defp deps do
-    [{:phoenix, "~> 1.0"},
+    [{:phoenix, "~> 1.3"},
      {:phoenix_html, "~> 2.0"},
      {:con_cache, "~> 0.8.1"},
      {:ibrowse, github: "cmullaparthi/ibrowse", tag: "v4.1.2"},
      {:httpotion, "~> 0.2.0"},
-     {:timex, "~> 0.19.0"},
+     {:timex, "~> 3.2.2"},
      {:plug_canonical_host, "~> 0.2.0"},
      {:cowboy, "~> 1.0"}]
   end
