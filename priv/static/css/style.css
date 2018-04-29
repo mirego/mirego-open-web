@@ -200,6 +200,14 @@ a {
   background-color: rgba(74, 34, 93, 0.8);
 }
 
+.repo--language-kotlin .repo-header-language {
+  background-color: rgba(226, 116, 88, 1);
+}
+
+.repo--language-kotlin:hover .repo-header-language {
+  background-color: rgba(226, 116, 88, 0.8);
+}
+
 .repo--language-none .repo-header-language {
   display: none;
 }
