@@ -37,4 +37,4 @@ FORCE_SSL=
 
 ## License
 
-`OpenMirego` is © 2014-2017 [Mirego](http://www.mirego.com) and may be freely distributed under the [New BSD license](http://opensource.org/licenses/BSD-3-Clause).  See the [`LICENSE.md`](https://github.com/mirego/mirego-open-web/blob/master/LICENSE.md) file.
+`OpenMirego` is © 2014-2018 [Mirego](http://www.mirego.com) and may be freely distributed under the [New BSD license](http://opensource.org/licenses/BSD-3-Clause).  See the [`LICENSE.md`](https://github.com/mirego/mirego-open-web/blob/master/LICENSE.md) file.
