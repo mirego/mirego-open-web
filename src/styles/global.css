@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'noe';
+  font-style: normal;
+  font-weight: 600;
+  src: url('https://fonts.mirego.com/fonts/noe-display-bold.eot');
+  src:
+    url('https://fonts.mirego.com/fonts/noe-display-bold.eot?#iefix') format('embedded-opentype'),
+    url('https://fonts.mirego.com/fonts/noe-display-bold.woff') format('woff');
+}
+
+body {
+  padding: 40px 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 30px 20px;
+  }
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  font-weight: 500;
+  color: #666;
+  transition: background 0.1s ease-in;
+}
+
+a:hover {
+  color: #444;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.punctuation {
+  color: #ff382a;
+}
