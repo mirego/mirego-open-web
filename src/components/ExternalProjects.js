@@ -15,30 +15,17 @@ import GraphQLLogo from '../images/graphql.svg';
 const Content = styled.div`
   display: flex;
   justify-content: center;
-  margin: 0 0 40px;
-
-  @media (max-width: 980px) {
-    & {
-      margin-right: 0;
-      margin-left: 0;
-    }
-  }
+  flex-wrap: wrap;
 `;
 
 const ContentWrapper = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 20px;
   border-radius: 3px;
-  margin: 0 auto 40px;
-
-  @media (max-width: 980px) {
-    & {
-      flex-direction: column;
-      background: transparent;
-    }
-  }
+  margin: 0 auto 50px;
 `;
 
 export default () => (

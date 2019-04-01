@@ -4,21 +4,12 @@ import styled from '@emotion/styled';
 const Link = styled.a`
   display: block;
   border: 0;
-  margin: 0 20px;
+  margin: 0 20px 30px;
   text-decoration: none;
   transition: opacity 0.1s ease-in;
 
   &:hover {
     opacity: 0.6;
-  }
-
-  @media (max-width: 980px) {
-    & {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 30px;
-      margin-left: 0;
-    }
   }
 `;
 
@@ -28,12 +19,6 @@ const ImageWrapper = styled.div`
 
 const Image = styled.img`
   height: 50px;
-
-  @media (max-width: 980px) {
-    & {
-      height: 100px;
-    }
-  }
 `;
 
 export default ({url, logo, name}) => (
