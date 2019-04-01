@@ -15,12 +15,29 @@ const Content = styled.div`
 export default () => (
   <Content>
     <p>
-      At Mirego, we build a huge majority of our products using open source
-      technologies (eg. <a href="https://emberjs.com/">Ember.js</a>,{' '}
-      <a href="https://reactjs.org/">React</a>,{' '}
-      <a href="https://elixir-lang.org/">Elixir</a>,{' '}
-      <a href="https://rubyonrails.org/">Ruby on Rails</a>, etc.) maintained by
-      stable, mature and active communities.
+      At <a href="https://www.mirego.com">Mirego</a>, we build a huge majority
+      of our products using open source technologies (eg.{' '}
+      <a href="https://emberjs.com/">Ember.js</a>,{' '}
+      <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/">
+        React
+      </a>
+      ,{' '}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://elixir-lang.org/"
+      >
+        Elixir
+      </a>
+      ,{' '}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://rubyonrails.org/"
+      >
+        Ruby on Rails
+      </a>
+      , etc.) maintained by stable, mature and active communities.
     </p>
     <p>
       It’s very important for us to give back to these communities by either
