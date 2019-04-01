@@ -10,7 +10,7 @@ const Paragraph = styled.p`
   margin-bottom: 8px;
   font-size: 12px;
 
-  &:first-child {
+  &:first-of-type {
     font-size: 14px;
   }
 `;
