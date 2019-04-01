@@ -77,7 +77,7 @@ const Tags = styled.em`
 `;
 
 export default ({url, name, logo, description, tags}) => (
-  <Link href={url} target="_blank">
+  <Link href={url} target="_blank" rel="noopener">
     <ImageWrapper>
       <Image src={logo} alt={name} />
     </ImageWrapper>
