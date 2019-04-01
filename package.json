@@ -1,0 +1,40 @@
+{
+  "name": "open.mirego.com",
+  "description": "The website that showcases our open source projects on https://open.mirego.com",
+  "private": false,
+  "version": "1.0.0",
+  "author": "Rémi Prévost <rprevost@mirego.com>",
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "gatsby": "^2.3.3",
+    "gatsby-image": "^2.0.35",
+    "gatsby-plugin-emotion": "^4.0.4",
+    "gatsby-plugin-react-helmet": "^3.0.11",
+    "gatsby-plugin-sharp": "^2.0.32",
+    "gatsby-source-filesystem": "^2.0.28",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-helmet": "^5.2.0",
+    "simple-css-reset": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "5.15.1",
+    "eslint-config-prettier": "4.1.0",
+    "eslint-plugin-mirego": "0.0.1",
+    "prettier": "1.16.4",
+    "stylelint": "9.10.1",
+    "stylelint-config-mirego": "1.0.4",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.5.2"
+  },
+  "license": "BSD-3",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  }
+}
