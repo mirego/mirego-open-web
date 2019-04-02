@@ -59,3 +59,15 @@ p:last-child {
     transform: scale3d(1, 1, 1);
   }
 }
+
+@keyframes zoom-out {
+  from {
+    opacity: 0;
+    transform: scale3d(1.5, 1.5, 1.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}

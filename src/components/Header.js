@@ -26,6 +26,7 @@ const Symbol = styled.span`
   display: block;
   padding: 8px 0 0;
   margin: 0 0.5em 0 0.6em;
+  animation: 0.5s zoom-out;
 
   @media (max-width: 720px) {
     & {
