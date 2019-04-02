@@ -13,6 +13,7 @@ import EmberBestLanguageLogo from '../images/ember-best-language.svg';
 import ActiveRecordJSONValidatorLogo from '../images/activerecord-json-validator.svg';
 import MicroscopeLogo from '../images/microscope.svg';
 import GaffeLogo from '../images/gaffe.svg';
+import StylelintMiregoLogo from '../images/stylelint-mirego.svg';
 import GenericLogo from '../images/generic.svg';
 
 const Content = styled.div`
@@ -120,7 +121,7 @@ export default () => (
 
     <Project
       url="https://github.com/mirego/stylelint-mirego"
-      logo={GenericLogo}
+      logo={StylelintMiregoLogo}
       name="stylelint-mirego"
       description="A collection of Stylelint rules that help our code meet our code styling guidelines."
       tags="#javascript #css #sass #stylelint"
