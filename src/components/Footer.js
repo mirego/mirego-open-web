@@ -22,7 +22,22 @@ export default () => (
       products.
     </Paragraph>
     <Paragraph>
-      Built with ♥ by the team @ <a href="https://www.mirego.com">Mirego</a>.
+      <a
+        href="https://github.com/mirego/mirego-open-web"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Built
+      </a>{' '}
+      with ♥ (and{' '}
+      <a
+        href="https://www.gatsbyjs.org"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Gatsby.js
+      </a>
+      ) by the team @ <a href="https://www.mirego.com">Mirego</a>.
     </Paragraph>
   </Content>
 );
