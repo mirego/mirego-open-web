@@ -30,12 +30,8 @@ export default () => (
         Elixir
       </a>
       ,{' '}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://rubyonrails.org/"
-      >
-        Ruby on Rails
+      <a target="_blank" rel="noopener noreferrer" href="https://swift.org/">
+        Swift
       </a>
       , etc.) maintained by stable, mature and active communities.
     </p>
