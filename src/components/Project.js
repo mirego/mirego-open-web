@@ -44,6 +44,12 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
   display: block;
   height: 60px;
+  animation: 0.5s zoom-in;
+  transition: transform 0.1s ease-in;
+
+  a:hover & {
+    transform: scale3d(1.075, 1.075, 1.075);
+  }
 `;
 
 const Content = styled.div`
