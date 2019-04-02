@@ -9,6 +9,7 @@
   "rules": {
     "declaration-colon-newline-after": null,
     "mirego/prefer-sass-rgba-function": null,
+    "no-unknown-animations": null,
     "property-no-unknown": null
   }
 }
