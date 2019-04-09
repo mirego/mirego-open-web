@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 
 const Content = styled.div`
   margin: 0 0 30px;
+  padding: 0 10px;
   text-align: center;
   color: #666;
 `;
