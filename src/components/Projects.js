@@ -14,6 +14,7 @@ import ActiveRecordJSONValidatorLogo from '../images/activerecord-json-validator
 import MicroscopeLogo from '../images/microscope.svg';
 import GaffeLogo from '../images/gaffe.svg';
 import StylelintMiregoLogo from '../images/stylelint-mirego.svg';
+import EmberChaiDomHelpersLogo from '../images/ember-chai-dom-helpers.svg';
 import GenericLogo from '../images/generic.svg';
 
 const Content = styled.div`
@@ -137,7 +138,7 @@ export default () => (
 
     <Project
       url="https://github.com/mirego/ember-chai-dom-helpers"
-      logo={GenericLogo}
+      logo={EmberChaiDomHelpersLogo}
       name="ember-chai-dom-helpers"
       description="A set of Chai helpers ready for your DOM."
       tags="#javascript #ember #chai"
