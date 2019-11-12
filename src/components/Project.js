@@ -58,12 +58,12 @@ const Content = styled.div`
 const Name = styled.strong`
   display: block;
   padding: 0 0 14px;
-  font-weight: bold;
+  background: #fff;
+  text-align: center;
   font-family: 'noe', serif;
   font-size: 16px;
+  font-weight: bold;
   color: rgba(0, 0, 0, 0.75);
-  text-align: center;
-  background: #fff;
 
   @media (max-width: 720px) {
     & {
