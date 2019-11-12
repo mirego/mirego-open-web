@@ -34,9 +34,8 @@ const Link = styled.a`
 const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 20px 0 16px;
   border-radius: 3px;
-  margin: 0 0 5px;
   background: #fff;
   text-align: center;
 `;
@@ -58,8 +57,13 @@ const Content = styled.div`
 
 const Name = styled.strong`
   display: block;
+  padding: 0 0 14px;
   font-weight: bold;
+  font-family: 'noe', serif;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  background: #fff;
 
   @media (max-width: 720px) {
     & {
@@ -88,8 +92,8 @@ export default ({url, name, logo, description, tags}) => (
       <Image src={logo} alt={name} />
     </ImageWrapper>
 
+    <Name>{name}</Name>
     <Content>
-      <Name>{name}</Name>
       <Description>{description}</Description>
       <Tags>{tags}</Tags>
     </Content>
