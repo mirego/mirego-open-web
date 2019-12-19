@@ -33,6 +33,14 @@ export default () => (
       <a target="_blank" rel="noopener noreferrer" href="https://swift.org/">
         Swift
       </a>
+      ,{' '}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://kotlinlang.org/"
+      >
+        Kotlin
+      </a>
       , etc.) maintained by stable, mature and active communities.
     </p>
     <p>

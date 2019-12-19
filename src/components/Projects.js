@@ -15,6 +15,7 @@ import MicroscopeLogo from '../images/microscope.svg';
 import GaffeLogo from '../images/gaffe.svg';
 import StylelintMiregoLogo from '../images/stylelint-mirego.svg';
 import EmberChaiDomHelpersLogo from '../images/ember-chai-dom-helpers.svg';
+import TrikotLogo from '../images/trikot.svg';
 import GenericLogo from '../images/generic.svg';
 
 const Content = styled.div`
@@ -113,14 +114,6 @@ export default () => (
     />
 
     <Project
-      url="https://github.com/mirego/taylor-ios"
-      logo={GenericLogo}
-      name="Taylor"
-      description="iOS Framework with a bunch of classes and helpers for Swift."
-      tags="#swift #ios"
-    />
-
-    <Project
       url="https://github.com/mirego/stylelint-mirego"
       logo={StylelintMiregoLogo}
       name="stylelint-mirego"
@@ -129,19 +122,67 @@ export default () => (
     />
 
     <Project
-      url="https://github.com/mirego/kotlin-ssml-dsl"
-      logo={GenericLogo}
-      name="kotlin-ssml-dsl"
-      description="A Kotlin DSL for SSML, supports Actions on Google."
-      tags="#kotlin #ssml"
-    />
-
-    <Project
       url="https://github.com/mirego/ember-chai-dom-helpers"
       logo={EmberChaiDomHelpersLogo}
       name="ember-chai-dom-helpers"
       description="A set of Chai helpers ready for your DOM."
       tags="#javascript #ember #chai"
+    />
+
+    <Project
+      url="https://github.com/mirego/trikot.streams"
+      logo={TrikotLogo}
+      name="Trikot.streams"
+      description="Reactive Streams for Kotlin Multiplatform with mutability checks."
+      tags="#kotlin #kotlin-multiplatform #reactive-streams"
+    />
+
+    <Project
+      url="https://github.com/mirego/trikot.foundation"
+      logo={TrikotLogo}
+      name="Trikot.foundation"
+      description="Core utilities for Kotlin Multiplatform."
+      tags="#kotlin #kotlin-multiplatform"
+    />
+
+    <Project
+      url="https://github.com/mirego/trikot.metaviews"
+      logo={TrikotLogo}
+      name="Trikot.metaviews"
+      description="Meta abstraction of visual components for Kotlin Multiplatform."
+      tags="#kotlin #kotlin-multiplatform"
+    />
+
+    <Project
+      url="https://github.com/mirego/trikot.http"
+      logo={TrikotLogo}
+      name="Trikot.http"
+      description="HTTP networking abstraction for Kotlin Multiplatform."
+      tags="#kotlin #kotlin-multiplatform #http"
+    />
+
+    <Project
+      url="https://github.com/mirego/trikot.kword"
+      logo={TrikotLogo}
+      name="Trikot.kword"
+      description="Localization library for Kotlin Multiplatform. Tailor-made for Accent."
+      tags="#kotlin #kotlin-multiplatform #i18n"
+    />
+
+    <Project
+      url="https://github.com/mirego/taylor-ios"
+      logo={GenericLogo}
+      name="Taylor"
+      description="iOS Framework with a bunch of classes and helpers for Swift."
+      tags="#swift #ios"
+    />
+
+    <Project
+      url="https://github.com/mirego/kotlin-ssml-dsl"
+      logo={GenericLogo}
+      name="kotlin-ssml-dsl"
+      description="A Kotlin DSL for SSML, supports Actions on Google."
+      tags="#kotlin #ssml"
     />
   </Content>
 );
