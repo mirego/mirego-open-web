@@ -16,6 +16,8 @@ import GaffeLogo from '../images/gaffe.svg';
 import StylelintMiregoLogo from '../images/stylelint-mirego.svg';
 import EmberChaiDomHelpersLogo from '../images/ember-chai-dom-helpers.svg';
 import TrikotLogo from '../images/trikot.svg';
+import CredoNamingLogo from '../images/credo-naming.svg';
+import AbsintheErrorPayloadLogo from '../images/absinthe-error-payload.svg';
 import GenericLogo from '../images/generic.svg';
 
 const Content = styled.div`
@@ -87,6 +89,22 @@ export default () => (
       name="Ember Best Language"
       description="A FastBoot-enabled addon to detect the best language for your user."
       tags="#javascript #typescript #i18n"
+    />
+
+    <Project
+      url="https://github.com/mirego/credo_naming"
+      logo={CredoNamingLogo}
+      name="CredoNaming"
+      description="A suite of Credo checks to enforce naming best practices in an Elixir project."
+      tags="#elixir #credo #consistency"
+    />
+
+    <Project
+      url="https://github.com/mirego/absinthe_error_payload"
+      logo={AbsintheErrorPayloadLogo}
+      name="AbsintheErrorPayload"
+      description="Bridges the gap between Ecto and Absinthe GraphQL by listing validation messages in a mutation payload."
+      tags="#elixir #absinthe #ecto #graphql"
     />
 
     <Project
