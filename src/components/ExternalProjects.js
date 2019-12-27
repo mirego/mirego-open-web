@@ -11,11 +11,17 @@ import SwiftLogo from '../images/swift.png';
 import KotlinLogo from '../images/kotlin.png';
 import DockerLogo from '../images/docker.png';
 import GraphQLLogo from '../images/graphql.svg';
+import KubernetesLogo from '../images/kubernetes.svg';
 
 const Content = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0 200px;
+
+  @media (max-width: 720px) {
+    padding: 0;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -67,6 +73,12 @@ export default () => (
         url="https://kotlinlang.org/"
         logo={KotlinLogo}
         name="Kotlin"
+      />
+
+      <ExternalProject
+        url="https://kubernetes.io/"
+        logo={KubernetesLogo}
+        name="Kubernetes"
       />
 
       <ExternalProject
