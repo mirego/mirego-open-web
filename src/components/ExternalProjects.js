@@ -12,6 +12,7 @@ import KotlinLogo from '../images/kotlin.png';
 import DockerLogo from '../images/docker.png';
 import GraphQLLogo from '../images/graphql.svg';
 import KubernetesLogo from '../images/kubernetes.svg';
+import TerraformLogo from '../images/terraform.svg';
 
 const Content = styled.div`
   display: flex;
@@ -73,6 +74,12 @@ export default () => (
         url="https://kotlinlang.org/"
         logo={KotlinLogo}
         name="Kotlin"
+      />
+
+      <ExternalProject
+        url="https://www.terraform.io/"
+        logo={TerraformLogo}
+        name="Terraform"
       />
 
       <ExternalProject
