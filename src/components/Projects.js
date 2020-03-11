@@ -18,6 +18,7 @@ import EmberChaiDomHelpersLogo from '../images/ember-chai-dom-helpers.svg';
 import TrikotLogo from '../images/trikot.svg';
 import CredoNamingLogo from '../images/credo-naming.svg';
 import AbsintheErrorPayloadLogo from '../images/absinthe-error-payload.svg';
+import MixAuditLogo from '../images/mix-audit.svg';
 import GenericLogo from '../images/generic.svg';
 
 const Content = styled.div`
@@ -73,6 +74,14 @@ export default () => (
       name="Dispatch"
       description="Dispatch makes sure pull requests within a GitHub organization get reviewed by the right people."
       tags="#elixir #github #code-review"
+    />
+
+    <Project
+      url="https://github.com/mirego/mix_audit"
+      logo={MixAuditLogo}
+      name="MixAudit"
+      description="MixAudit provides a task to scan a project Mix dependencies for known Elixir security vulnerabilities"
+      tags="#elixir #security"
     />
 
     <Project
