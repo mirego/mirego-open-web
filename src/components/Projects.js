@@ -3,23 +3,25 @@ import styled from '@emotion/styled';
 
 import Project from './Project';
 
+import AbsintheErrorPayloadLogo from '../images/absinthe-error-payload.svg';
 import AccentLogo from '../images/accent.svg';
+import ActiveRecordJSONValidatorLogo from '../images/activerecord-json-validator.svg';
+import CredoNamingLogo from '../images/credo-naming.svg';
 import DispatchLogo from '../images/dispatch.svg';
 import ElixirBoilerplateLogo from '../images/elixir-boilerplate.svg';
-import EmberBoilerplateLogo from '../images/ember-boilerplate.svg';
-import ReactBoilerplateLogo from '../images/react-boilerplate.svg';
-import SimpleCSSResetLogo from '../images/simple-css-reset.svg';
 import EmberBestLanguageLogo from '../images/ember-best-language.svg';
-import ActiveRecordJSONValidatorLogo from '../images/activerecord-json-validator.svg';
-import MicroscopeLogo from '../images/microscope.svg';
-import GaffeLogo from '../images/gaffe.svg';
-import StylelintMiregoLogo from '../images/stylelint-mirego.svg';
+import EmberBoilerplateLogo from '../images/ember-boilerplate.svg';
 import EmberChaiDomHelpersLogo from '../images/ember-chai-dom-helpers.svg';
-import TrikotLogo from '../images/trikot.svg';
-import CredoNamingLogo from '../images/credo-naming.svg';
-import AbsintheErrorPayloadLogo from '../images/absinthe-error-payload.svg';
-import MixAuditLogo from '../images/mix-audit.svg';
+import GaffeLogo from '../images/gaffe.svg';
 import GenericLogo from '../images/generic.svg';
+import HTMLTestHelpersLogo from '../images/html-test-helpers.svg';
+import HTMLTestIdentifiersLogo from '../images/html-test-identifiers.svg';
+import MicroscopeLogo from '../images/microscope.svg';
+import MixAuditLogo from '../images/mix-audit.svg';
+import SimpleCSSResetLogo from '../images/simple-css-reset.svg';
+import StylelintMiregoLogo from '../images/stylelint-mirego.svg';
+import ReactBoilerplateLogo from '../images/react-boilerplate.svg';
+import TrikotLogo from '../images/trikot.svg';
 
 const Content = styled.div`
   display: flex;
@@ -117,6 +119,22 @@ export default () => (
     />
 
     <Project
+      url="https://github.com/mirego/html_test_identifiers"
+      logo={HTMLTestIdentifiersLogo}
+      name="HTMLTestIdentifiers"
+      description="Basic functionality to add data-testid attribute depending on configuration."
+      tags="#elixir #html #exunit"
+    />
+
+    <Project
+      url="https://github.com/mirego/html_test_helpers"
+      logo={HTMLTestHelpersLogo}
+      name="HTMLTestHelpers"
+      description="Function helpers for unit testing allowing easy assertions for HTML elements data queried by data-testid attribute."
+      tags="#elixir #html #exunit"
+    />
+
+    <Project
       url="https://github.com/mirego/activerecord_json_validator"
       logo={ActiveRecordJSONValidatorLogo}
       name="ActiveRecord::JSONValidator"
@@ -157,6 +175,14 @@ export default () => (
     />
 
     <Project
+      url="https://github.com/mirego/trikot.analytics"
+      logo={TrikotLogo}
+      name="Trikot.analytics"
+      description="Implementation of Multiplatform Analytics in ReactiveStreams."
+      tags="#kotlin #kotlin-multiplatform #analytics #reactive-streams"
+    />
+
+    <Project
       url="https://github.com/mirego/trikot.streams"
       logo={TrikotLogo}
       name="Trikot.streams"
@@ -194,6 +220,14 @@ export default () => (
       name="Trikot.kword"
       description="Localization library for Kotlin Multiplatform. Tailor-made for Accent."
       tags="#kotlin #kotlin-multiplatform #i18n"
+    />
+
+    <Project
+      url="http://github.com/mirego/trikot.datasources"
+      logo={TrikotLogo}
+      name="Trikot.datasources"
+      description="Multiplaform cache layers abstraction."
+      tags="#kotlin #kotlin-multiplatform #cache"
     />
 
     <Project
