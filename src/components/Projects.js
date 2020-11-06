@@ -207,6 +207,14 @@ export default () => (
     />
 
     <Project
+      url="https://github.com/mirego/trikot.patron"
+      logo={TrikotLogo}
+      name="Trikot.patron"
+      description="Kotlin Multiplatform Sample Project using Trikot libraries."
+      tags="#kotlin #kotlin-multiplatform"
+    />
+
+    <Project
       url="https://github.com/mirego/trikot.http"
       logo={TrikotLogo}
       name="Trikot.http"
