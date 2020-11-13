@@ -199,9 +199,9 @@ export default () => (
     />
 
     <Project
-      url="https://github.com/mirego/trikot.metaviews"
+      url="https://github.com/mirego/trikot.viewmodels"
       logo={TrikotLogo}
-      name="Trikot.metaviews"
+      name="Trikot.viewmodels"
       description="Meta abstraction of visual components for Kotlin Multiplatform."
       tags="#kotlin #kotlin-multiplatform"
     />
