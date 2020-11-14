@@ -1,7 +1,5 @@
 {
-  "extends": [
-    "stylelint-config-mirego"
-  ],
+  "extends": ["stylelint-config-mirego", "stylelint-config-prettier"],
   "rules": {
     "mirego/prefer-sass-rgba-function": null
   }

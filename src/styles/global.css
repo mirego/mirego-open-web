@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 600;
   src: url('https://fonts.mirego.com/fonts/noe-display-bold.eot');
-  src:
-    url('https://fonts.mirego.com/fonts/noe-display-bold.eot?#iefix') format('embedded-opentype'),
+  src: url('https://fonts.mirego.com/fonts/noe-display-bold.eot?#iefix')
+      format('embedded-opentype'),
     url('https://fonts.mirego.com/fonts/noe-display-bold.woff') format('woff');
 }
 
