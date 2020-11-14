@@ -4,10 +4,6 @@
   "private": false,
   "version": "1.0.0",
   "author": "Rémi Prévost <rprevost@mirego.com>",
-  "engines": {
-    "node": "~10.16",
-    "npm": "~6.9"
-  },
   "dependencies": {
     "@emotion/core": "^10.0.7",
     "@emotion/styled": "^10.0.7",
@@ -26,12 +22,19 @@
     "simple-css-reset": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "5.15.1",
-    "eslint-config-prettier": "4.1.0",
-    "eslint-plugin-mirego": "0.0.1",
-    "prettier": "1.16.4",
-    "stylelint": "9.10.1",
-    "stylelint-config-mirego": "1.0.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.11.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-mirego": "^0.0.1",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "prettier": "2.1.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-mirego": "^1.0.5",
+    "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.5.2"
   },

@@ -5,6 +5,13 @@ APP_NAME ?= `grep -m1 name package.json | awk -F: '{ print $$2 }' | sed 's/[ ",]
 APP_VERSION ?= `grep -m1 version package.json | awk -F: '{ print $$2 }' | sed 's/[ ",]//g'`
 GIT_REVISION ?= `git rev-parse HEAD`
 
+# Linter and formatter configuration
+# ----------------------------------
+
+PRETTIER_FILES_PATTERN = *.js '**/*.{js,jsx,ts,tsx,json,md,css}'
+STYLELINT_FILES_PATTERN = '**/*.css'
+ESLINT_FILES_PATTERN = '**/*.{js,ts,jsx,tsx}'
+
 # Introspection targets
 # ---------------------
 
@@ -32,44 +39,46 @@ targets:
 	@perl -nle'print $& if m{^[a-zA-Z_-]+:.*?## .*$$}' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-22s\033[0m %s\n", $$1, $$2}'
 
 # Build targets
-# -------------
+# ------------------
+#
+.PHONY: build
+build:
+	`yarn bin`/gatsby build
+
+# Development targets
+# -------------------
 
 .PHONY: dependencies
-dependencies:
-	npm install
+dependencies: ## Install dependencies required by the application
+	yarn install
 
-# CI targets
-# ----------
+.PHONY: run
+run: ## Run the application in development mode
+	gatsby develop
 
-.PHONY: lint
-lint: lint-prettier lint-eslint lint-stylelint lint-stylelint-components ## Run lint tools on the code
-
-.PHONY: lint-prettier
-lint-prettier:
-	npx prettier -l 'src/**/*.js' '**/*.md'
-
-.PHONY: lint-eslint
-lint-eslint:
-	npx eslint . 'src/**/*.js'
-
-.PHONY: lint-stylelint
-lint-stylelint:
-	npx stylelint --config .stylelintrc.json 'src/**/*.css'
-
-.PHONY: lint-stylelint-components
-lint-stylelint-components:
-	npx stylelint --config .stylelintrc-components.json 'src/**/*.js'
-
-.PHONY: lint-fix
-lint-fix: format lint-tslint-fix
+# Check, lint and format targets
+# ------------------------------
 
 .PHONY: format
-format: format-prettier ## Run formatting tools on the code
+format: format-scripts format-styles ## Format project files
 
-.PHONY: format-prettier
-format-prettier:
-	npx prettier --write 'src/**/*.js' '**/*.md'
+.PHONY: format-scripts
+format-scripts:
+	`yarn bin`/prettier --write $(PRETTIER_FILES_PATTERN)
+	`yarn bin`/eslint --fix $(ESLINT_FILES_PATTERN)
 
-.PHONY: build-app
-build-app:
-	npm run build
+.PHONY: format-styles
+format-styles:
+	`yarn bin`/stylelint --fix $(STYLELINT_FILES_PATTERN)
+
+.PHONY: lint
+lint: lint-scripts lint-styles ## Lint project files
+
+.PHONY: lint-scripts
+lint-scripts:
+	`yarn bin`/prettier --check $(PRETTIER_FILES_PATTERN)
+	`yarn bin`/eslint $(ESLINT_FILES_PATTERN)
+
+.PHONY: lint-styles
+lint-styles:
+	`yarn bin`/stylelint $(STYLELINT_FILES_PATTERN)
