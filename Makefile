@@ -40,7 +40,7 @@ targets:
 
 # Build targets
 # ------------------
-#
+
 .PHONY: build
 build:
 	`yarn bin`/gatsby build
