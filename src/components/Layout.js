@@ -8,6 +8,7 @@ import OpenGraphImage from '../images/social.png';
 import 'simple-css-reset/reset.css';
 import '../styles/global.css';
 
+/* eslint-disable jsx-a11y/accessible-emoji */
 const Layout = ({children}) => (
   <>
     <Helmet>
@@ -39,6 +40,7 @@ const Layout = ({children}) => (
     <main>{children}</main>
   </>
 );
+/* eslint-enable jsx-a11y/accessible-emoji */
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

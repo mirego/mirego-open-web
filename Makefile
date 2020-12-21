@@ -43,18 +43,18 @@ targets:
 
 .PHONY: build
 build:
-	`yarn bin`/gatsby build
+	npx gatsby build
 
 # Development targets
 # -------------------
 
 .PHONY: dependencies
 dependencies: ## Install dependencies required by the application
-	yarn install
+	npm install
 
 .PHONY: run
 run: ## Run the application in development mode
-	gatsby develop
+	npx gatsby develop
 
 # Check, lint and format targets
 # ------------------------------
@@ -64,21 +64,21 @@ format: format-scripts format-styles ## Format project files
 
 .PHONY: format-scripts
 format-scripts:
-	`yarn bin`/prettier --write $(PRETTIER_FILES_PATTERN)
-	`yarn bin`/eslint --fix $(ESLINT_FILES_PATTERN)
+	npx prettier --write $(PRETTIER_FILES_PATTERN)
+	npx eslint --fix $(ESLINT_FILES_PATTERN)
 
 .PHONY: format-styles
 format-styles:
-	`yarn bin`/stylelint --fix $(STYLELINT_FILES_PATTERN)
+	npx stylelint --fix $(STYLELINT_FILES_PATTERN)
 
 .PHONY: lint
 lint: lint-scripts lint-styles ## Lint project files
 
 .PHONY: lint-scripts
 lint-scripts:
-	`yarn bin`/prettier --check $(PRETTIER_FILES_PATTERN)
-	`yarn bin`/eslint $(ESLINT_FILES_PATTERN)
+	npx prettier --check $(PRETTIER_FILES_PATTERN)
+	npx eslint $(ESLINT_FILES_PATTERN)
 
 .PHONY: lint-styles
 lint-styles:
-	`yarn bin`/stylelint $(STYLELINT_FILES_PATTERN)
+	npx stylelint $(STYLELINT_FILES_PATTERN)
