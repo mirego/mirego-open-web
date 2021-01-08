@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import {useSiteMetadata} from '../utils/use-site-metadata';
 
 import Favicon from '../images/favicon.png';
 import OpenGraphImage from '../images/social.png';
@@ -9,41 +10,36 @@ import 'simple-css-reset/reset.css';
 import '../styles/global.css';
 
 /* eslint-disable jsx-a11y/accessible-emoji */
-const Layout = ({children}) => (
-  <>
-    <Helmet>
-      <title>Mirego ❤️ Open source</title>
-      <meta
-        name="description"
-        content="At Mirego, we build a huge majority of our products using open source technologies maintained by stable, mature and active communities. It’s very important for us to give back to these communities by either contributing directly to their projects or by providing libraries and tools inside their respective ecosystem."
-      />
+export default function Layout({children, variant}) {
+  const {title, description, siteUrl} = useSiteMetadata();
 
-      <link rel="shortcut icon" type="image/png" href={Favicon} />
+  return (
+    <>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
 
-      <meta property="og:title" content="Mirego ❤️ Open source" />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content={OpenGraphImage} />
-      <meta property="og:image:width" content="1782" />
-      <meta property="og:image:height" content="912" />
+        <link rel="shortcut icon" type="image/png" href={Favicon} />
 
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="@mirego" />
-      <meta name="twitter:creator" content="@mirego" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={siteUrl + OpenGraphImage} />
+        <meta property="og:image:width" content="1782" />
+        <meta property="og:image:height" content="912" />
 
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700"
-      />
-    </Helmet>
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@mirego" />
+        <meta name="twitter:creator" content="@mirego" />
 
-    <main>{children}</main>
-  </>
-);
-/* eslint-enable jsx-a11y/accessible-emoji */
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700"
+        />
+      </Helmet>
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
-export default Layout;
+      <main>{children}</main>
+    </>
+  );
+}
