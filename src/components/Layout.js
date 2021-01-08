@@ -20,7 +20,7 @@ const Layout = ({children}) => (
 
       <link rel="shortcut icon" type="image/png" href={Favicon} />
 
-      <meta property="og:site_name" content="Mirego ❤️ Open source" />
+      <meta property="og:title" content="Mirego ❤️ Open source" />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={OpenGraphImage} />
       <meta property="og:image:width" content="1782" />
