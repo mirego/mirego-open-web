@@ -28,7 +28,7 @@ export default function Layout({children, variant}) {
         <meta property="og:image:width" content="1782" />
         <meta property="og:image:height" content="912" />
 
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@mirego" />
         <meta name="twitter:creator" content="@mirego" />
 
