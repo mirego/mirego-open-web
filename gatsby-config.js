@@ -22,5 +22,12 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKER_ID,
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-TW4FPB3',
+        includeInDevelopment: false,
+      },
+    },
   ],
 };
