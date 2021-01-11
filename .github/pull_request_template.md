@@ -4,4 +4,4 @@
 
 ## 🦀 Dispatch
 
-- `#dispatch/react
+- `#dispatch/react`
