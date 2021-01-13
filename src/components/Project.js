@@ -86,30 +86,20 @@ const Tags = styled.em`
   color: rgba(0, 0, 0, 0.3);
 `;
 
-export default ({slug, name, logo, description, tags}) => {
-  let logoSrc;
+export default ({slug, name, logo, description, tags}) => (
+  <Link
+    href={`https://github.com/mirego/${slug}`}
+    target="_blank"
+    rel="noopener"
+  >
+    <ImageWrapper>
+      <Image src={require(`../images/${logo}`)} alt={name} />
+    </ImageWrapper>
 
-  if (logo) {
-    logoSrc = require(`../images/${logo}`);
-  } else {
-    logoSrc = require(`../images/${slug.replace(/_/g, '-')}.svg`);
-  }
-
-  return (
-    <Link
-      href={`https://github.com/mirego/${slug}`}
-      target="_blank"
-      rel="noopener"
-    >
-      <ImageWrapper>
-        <Image src={logoSrc} alt={name} />
-      </ImageWrapper>
-
-      <Name>{name}</Name>
-      <Content>
-        <Description>{description}</Description>
-        <Tags>{tags.map((tag) => `#${tag}`).join(' ')}</Tags>
-      </Content>
-    </Link>
-  );
-};
+    <Name>{name}</Name>
+    <Content>
+      <Description>{description}</Description>
+      <Tags>{tags.map((tag) => `#${tag}`).join(' ')}</Tags>
+    </Content>
+  </Link>
+);

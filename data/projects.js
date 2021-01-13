@@ -1,6 +1,7 @@
 export default [
   {
     slug: 'accent',
+    logo: 'accent.svg',
     name: 'Accent',
     description:
       'The first developer-oriented translation tool. True asynchronous flow between translators and your team.',
@@ -8,6 +9,7 @@ export default [
   },
   {
     slug: 'elixir-boilerplate',
+    logo: 'elixir-boilerplate.svg',
     name: 'Elixir Boilerplate',
     description:
       'The stable base upon which we build our Elixir projects at Mirego.',
@@ -15,6 +17,7 @@ export default [
   },
   {
     slug: 'ember-boilerplate',
+    logo: 'ember-boilerplate.svg',
     name: 'Ember Boilerplate',
     description:
       'The stable base upon which we build our Ember.js projects at Mirego.',
@@ -22,6 +25,7 @@ export default [
   },
   {
     slug: 'react-boilerplate',
+    logo: 'react-boilerplate.svg',
     name: 'React Boilerplate',
     description:
       'The stable base upon which we build our React projects at Mirego.',
@@ -29,6 +33,7 @@ export default [
   },
   {
     slug: 'dispatch',
+    logo: 'dispatch.svg',
     name: 'Dispatch',
     description:
       'Dispatch makes sure pull requests within a GitHub organization get reviewed by the right people.',
@@ -36,6 +41,7 @@ export default [
   },
   {
     slug: 'mix_audit',
+    logo: 'mix-audit.svg',
     name: 'MixAudit',
     description:
       'MixAudit provides a task to scan a project Mix dependencies for known Elixir security vulnerabilities',
@@ -43,6 +49,7 @@ export default [
   },
   {
     slug: 'simple-css-reset',
+    logo: 'simple-css-reset.svg',
     name: 'Simple CSS Reset',
     description:
       'A simple, no-nonsense CSS reset stylesheet to use as an NPM dependency.',
@@ -50,6 +57,7 @@ export default [
   },
   {
     slug: 'ember-best-language',
+    logo: 'ember-best-language.svg',
     name: 'Ember Best Language',
     description:
       'A FastBoot-enabled addon to detect the best language for your user.',
@@ -57,6 +65,7 @@ export default [
   },
   {
     slug: 'credo_naming',
+    logo: 'credo-naming.svg',
     name: 'CredoNaming',
     description:
       'A suite of Credo checks to enforce naming best practices in an Elixir project.',
@@ -64,6 +73,7 @@ export default [
   },
   {
     slug: 'absinthe_error_payload',
+    logo: 'absinthe-error-payload.svg',
     name: 'AbsintheErrorPayload',
     description:
       'Bridges the gap between Ecto and Absinthe GraphQL by listing validation messages in a mutation payload.',
@@ -71,6 +81,7 @@ export default [
   },
   {
     slug: 'html_test_identifiers',
+    logo: 'html-test-identifiers.svg',
     name: 'HTMLTestIdentifiers',
     description:
       'Basic functionality to add data-testid attribute depending on configuration.',
@@ -78,6 +89,7 @@ export default [
   },
   {
     slug: 'html_test_helpers',
+    logo: 'html-test-helpers.svg',
     name: 'HTMLTestHelpers',
     description:
       'Function helpers for unit testing allowing easy assertions for HTML elements data queried by data-testid attribute.',
@@ -85,6 +97,7 @@ export default [
   },
   {
     slug: 'activerecord_json_validator',
+    logo: 'activerecord-json-validator.svg',
     name: 'ActiveRecord::JSONValidator',
     description:
       'ActiveRecord::JSONValidator makes it easy to validate JSON attributes against a JSON schema.',
@@ -92,6 +105,7 @@ export default [
   },
   {
     slug: 'microscope',
+    logo: 'microscope.svg',
     name: 'Microscope',
     description:
       'Microscope adds useful scopes targeting ActiveRecord boolean, date and datetime fields.',
@@ -99,12 +113,14 @@ export default [
   },
   {
     slug: 'gaffe',
+    logo: 'gaffe.svg',
     name: 'Gaffe',
     description: 'Gaffe handles Rails error pages in a clean, simple way.',
     tags: ['ruby', 'rails'],
   },
   {
     slug: 'stylelint-mirego',
+    logo: 'stylelint-mirego.svg',
     name: 'stylelint-mirego',
     description:
       'A collection of Stylelint rules that help our code meet our code styling guidelines.',
@@ -112,12 +128,14 @@ export default [
   },
   {
     slug: 'ember-chai-dom-helpers',
+    logo: 'ember-chai-dom-helpers.svg',
     name: 'ember-chai-dom-helpers',
     description: 'A set of Chai helpers ready for your DOM.',
     tags: ['javascript', 'ember', 'chai'],
   },
   {
     slug: 'trikot.analytics',
+    logo: 'trikot.analytics.svg',
     name: 'Trikot.analytics',
     logo: 'trikot.svg',
     description:
@@ -126,6 +144,7 @@ export default [
   },
   {
     slug: 'trikot.streams',
+    logo: 'trikot.streams.svg',
     name: 'Trikot.streams',
     logo: 'trikot.svg',
     description:
@@ -134,6 +153,7 @@ export default [
   },
   {
     slug: 'trikot.foundation',
+    logo: 'trikot.foundation.svg',
     name: 'Trikot.foundation',
     logo: 'trikot.svg',
     description: 'Core utilities for Kotlin Multiplatform.',
@@ -141,6 +161,7 @@ export default [
   },
   {
     slug: 'trikot.viewmodels',
+    logo: 'trikot.viewmodels.svg',
     name: 'Trikot.viewmodels',
     logo: 'trikot.svg',
     description:
@@ -149,6 +170,7 @@ export default [
   },
   {
     slug: 'trikot.patron',
+    logo: 'trikot.patron.svg',
     name: 'Trikot.patron',
     logo: 'trikot.svg',
     description: 'Kotlin Multiplatform Sample Project using Trikot libraries.',
@@ -156,6 +178,7 @@ export default [
   },
   {
     slug: 'trikot.http',
+    logo: 'trikot.http.svg',
     name: 'Trikot.http',
     logo: 'trikot.svg',
     description: 'HTTP networking abstraction for Kotlin Multiplatform.',
@@ -163,6 +186,7 @@ export default [
   },
   {
     slug: 'trikot.kword',
+    logo: 'trikot.kword.svg',
     name: 'Trikot.kword',
     logo: 'trikot.svg',
     description:
@@ -171,6 +195,7 @@ export default [
   },
   {
     slug: 'http://github.com/mirego/trikot.datasources',
+    logo: 'http://github.com/mirego/trikot.datasources.svg',
     name: 'Trikot.datasources',
     logo: 'trikot.svg',
     description: 'Multiplaform cache layers abstraction.',
@@ -178,6 +203,7 @@ export default [
   },
   {
     slug: 'taylor-ios',
+    logo: 'taylor-ios.svg',
     name: 'Taylor',
     logo: 'generic.svg',
     description: 'iOS Framework with a bunch of classes and helpers for Swift.',
@@ -185,6 +211,7 @@ export default [
   },
   {
     slug: 'kotlin-ssml-dsl',
+    logo: 'kotlin-ssml-dsl.svg',
     name: 'kotlin-ssml-dsl',
     logo: 'generic.svg',
     description: 'A Kotlin DSL for SSML, supports Actions on Google.',
