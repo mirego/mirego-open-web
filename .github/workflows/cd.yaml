@@ -17,6 +17,7 @@ jobs:
       - run: make build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GOOGLE_TAG_MANAGER_ID: GTM-TW4FPB3
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
