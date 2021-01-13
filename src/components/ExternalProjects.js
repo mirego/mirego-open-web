@@ -28,7 +28,7 @@ export default ({projects}) => (
   <Content>
     <ContentWrapper>
       {projects.map((project) => (
-        <ExternalProject {...project} />
+        <ExternalProject {...project.node} />
       ))}
     </ContentWrapper>
   </Content>

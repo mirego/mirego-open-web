@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   {
     slug: 'accent',
     logo: 'accent.svg',

@@ -1,3 +1,4 @@
+import {graphql} from 'gatsby';
 import React from 'react';
 
 import Layout from '../components/Layout';
@@ -11,10 +12,7 @@ import Footer from '../components/Footer';
 import Gem from '../components/Gem';
 import Wrapper from '../components/Wrapper';
 
-import projects from '../../data/projects';
-import externalProjects from '../../data/external-projects';
-
-const IndexPage = () => (
+export default ({data}) => (
   <Layout>
     <Gem />
 
@@ -30,7 +28,7 @@ const IndexPage = () => (
         </p>
       </Subtitle>
 
-      <Projects projects={projects} />
+      <Projects projects={data.allProject.edges} />
 
       <Subtitle title="“Standing on the shoulders of giants<span class='punctuation'>.</span>”">
         <p>
@@ -39,7 +37,7 @@ const IndexPage = () => (
         </p>
       </Subtitle>
 
-      <ExternalProjects projects={externalProjects} />
+      <ExternalProjects projects={data.allExternalProject.edges} />
 
       <Subtitle title="But wait, there’s more<span class='punctuation'>.</span>">
         <Outro />
@@ -50,4 +48,27 @@ const IndexPage = () => (
   </Layout>
 );
 
-export default IndexPage;
+export const pageQuery = graphql`
+  query IndexQuery {
+    allProject {
+      edges {
+        node {
+          description
+          logo
+          name
+          slug
+          tags
+        }
+      }
+    }
+    allExternalProject {
+      edges {
+        node {
+          logo
+          name
+          url
+        }
+      }
+    }
+  }
+`;
