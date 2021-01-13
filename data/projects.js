@@ -135,7 +135,6 @@ module.exports = [
   },
   {
     slug: 'trikot.analytics',
-    logo: 'trikot.analytics.svg',
     name: 'Trikot.analytics',
     logo: 'trikot.svg',
     description:
@@ -144,7 +143,6 @@ module.exports = [
   },
   {
     slug: 'trikot.streams',
-    logo: 'trikot.streams.svg',
     name: 'Trikot.streams',
     logo: 'trikot.svg',
     description:
@@ -153,7 +151,6 @@ module.exports = [
   },
   {
     slug: 'trikot.foundation',
-    logo: 'trikot.foundation.svg',
     name: 'Trikot.foundation',
     logo: 'trikot.svg',
     description: 'Core utilities for Kotlin Multiplatform.',
@@ -161,7 +158,6 @@ module.exports = [
   },
   {
     slug: 'trikot.viewmodels',
-    logo: 'trikot.viewmodels.svg',
     name: 'Trikot.viewmodels',
     logo: 'trikot.svg',
     description:
@@ -170,7 +166,6 @@ module.exports = [
   },
   {
     slug: 'trikot.patron',
-    logo: 'trikot.patron.svg',
     name: 'Trikot.patron',
     logo: 'trikot.svg',
     description: 'Kotlin Multiplatform Sample Project using Trikot libraries.',
@@ -178,7 +173,6 @@ module.exports = [
   },
   {
     slug: 'trikot.http',
-    logo: 'trikot.http.svg',
     name: 'Trikot.http',
     logo: 'trikot.svg',
     description: 'HTTP networking abstraction for Kotlin Multiplatform.',
@@ -186,7 +180,6 @@ module.exports = [
   },
   {
     slug: 'trikot.kword',
-    logo: 'trikot.kword.svg',
     name: 'Trikot.kword',
     logo: 'trikot.svg',
     description:
@@ -194,8 +187,7 @@ module.exports = [
     tags: ['kotlin', 'kotlin-multiplatform', 'i18n'],
   },
   {
-    slug: 'http://github.com/mirego/trikot.datasources',
-    logo: 'http://github.com/mirego/trikot.datasources.svg',
+    slug: 'trikot.datasources',
     name: 'Trikot.datasources',
     logo: 'trikot.svg',
     description: 'Multiplaform cache layers abstraction.',
@@ -203,7 +195,6 @@ module.exports = [
   },
   {
     slug: 'taylor-ios',
-    logo: 'taylor-ios.svg',
     name: 'Taylor',
     logo: 'generic.svg',
     description: 'iOS Framework with a bunch of classes and helpers for Swift.',
@@ -211,7 +202,6 @@ module.exports = [
   },
   {
     slug: 'kotlin-ssml-dsl',
-    logo: 'kotlin-ssml-dsl.svg',
     name: 'kotlin-ssml-dsl',
     logo: 'generic.svg',
     description: 'A Kotlin DSL for SSML, supports Actions on Google.',
