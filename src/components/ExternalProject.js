@@ -24,7 +24,7 @@ const Image = styled.img`
 export default ({url, logo, name}) => (
   <Link href={url} target="_blank" rel="noopener">
     <ImageWrapper>
-      <Image src={logo} alt={name} />
+      <Image src={require(`../images/${logo}`)} alt={name} />
     </ImageWrapper>
   </Link>
 );

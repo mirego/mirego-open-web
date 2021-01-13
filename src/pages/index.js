@@ -11,6 +11,9 @@ import Footer from '../components/Footer';
 import Gem from '../components/Gem';
 import Wrapper from '../components/Wrapper';
 
+import projects from '../../data/projects';
+import externalProjects from '../../data/external-projects';
+
 const IndexPage = () => (
   <Layout>
     <Gem />
@@ -27,7 +30,7 @@ const IndexPage = () => (
         </p>
       </Subtitle>
 
-      <Projects />
+      <Projects projects={projects} />
 
       <Subtitle title="“Standing on the shoulders of giants<span class='punctuation'>.</span>”">
         <p>
@@ -36,7 +39,7 @@ const IndexPage = () => (
         </p>
       </Subtitle>
 
-      <ExternalProjects />
+      <ExternalProjects projects={externalProjects} />
 
       <Subtitle title="But wait, there’s more<span class='punctuation'>.</span>">
         <Outro />

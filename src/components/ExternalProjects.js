@@ -3,17 +3,6 @@ import styled from '@emotion/styled';
 
 import ExternalProject from './ExternalProject.js';
 
-import EmberLogo from '../images/emberjs.png';
-import ReactLogo from '../images/react.png';
-import ElixirLogo from '../images/elixir.png';
-import RailsLogo from '../images/rails.png';
-import SwiftLogo from '../images/swift.png';
-import KotlinLogo from '../images/kotlin.png';
-import DockerLogo from '../images/docker.png';
-import GraphQLLogo from '../images/graphql.svg';
-import KubernetesLogo from '../images/kubernetes.svg';
-import TerraformLogo from '../images/terraform.svg';
-
 const Content = styled.div`
   display: flex;
   justify-content: center;
@@ -35,64 +24,12 @@ const ContentWrapper = styled.div`
   margin: 0 auto 50px;
 `;
 
-export default () => (
+export default ({projects}) => (
   <Content>
     <ContentWrapper>
-      <ExternalProject
-        url="https://emberjs.com"
-        logo={EmberLogo}
-        name="Ember.js"
-      />
-
-      <ExternalProject
-        url="https://reactjs.org"
-        logo={ReactLogo}
-        name="React"
-      />
-
-      <ExternalProject
-        url="https://elixir-lang.org"
-        logo={ElixirLogo}
-        name="Elixir"
-      />
-
-      <ExternalProject
-        url="https://graphql.org"
-        logo={GraphQLLogo}
-        name="GraphQL"
-      />
-
-      <ExternalProject
-        url="https://rubyonrails.org"
-        logo={RailsLogo}
-        name="Ruby on Rails"
-      />
-
-      <ExternalProject url="https://swift.org" logo={SwiftLogo} name="Swift" />
-
-      <ExternalProject
-        url="https://kotlinlang.org/"
-        logo={KotlinLogo}
-        name="Kotlin"
-      />
-
-      <ExternalProject
-        url="https://www.terraform.io/"
-        logo={TerraformLogo}
-        name="Terraform"
-      />
-
-      <ExternalProject
-        url="https://kubernetes.io/"
-        logo={KubernetesLogo}
-        name="Kubernetes"
-      />
-
-      <ExternalProject
-        url="https://www.docker.com/"
-        logo={DockerLogo}
-        name="Docker"
-      />
+      {projects.map((project) => (
+        <ExternalProject {...project} />
+      ))}
     </ContentWrapper>
   </Content>
 );
