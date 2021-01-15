@@ -54,6 +54,7 @@ export const pageQuery = graphql`
       edges {
         node {
           description
+          id
           logo
           name
           slug
@@ -64,6 +65,7 @@ export const pageQuery = graphql`
     allExternalProject {
       edges {
         node {
+          id
           logo
           name
           url
