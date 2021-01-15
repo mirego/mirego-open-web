@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 const Link = styled.a`
   display: block;
-  width: calc(33.3333% - 10px);
+  width: calc(25% - 10px);
   border: 1px solid rgba(0, 0, 0, 0.01);
   border-radius: 3px;
   margin: 0 5px 10px;
@@ -18,11 +18,17 @@ const Link = styled.a`
 
   @media (max-width: 980px) {
     & {
+      width: calc(33.3333% - 10px);
+    }
+  }
+
+  @media (max-width: 720px) {
+    & {
       width: calc(50% - 10px);
     }
   }
 
-  @media (max-width: 810px) {
+  @media (max-width: 600px) {
     & {
       width: 100%;
       margin-right: 0;
@@ -60,10 +66,10 @@ const Name = styled.strong`
   padding: 0 0 14px;
   background: #fff;
   text-align: center;
-  font-family: 'noe', serif;
   font-size: 16px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.75);
+  word-wrap: wrap;
 
   @media (max-width: 720px) {
     & {
@@ -75,6 +81,7 @@ const Name = styled.strong`
 const Description = styled.span`
   display: block;
   padding: 6px 0 0;
+  font-size: 12px;
   color: rgba(0, 0, 0, 0.75);
 `;
 

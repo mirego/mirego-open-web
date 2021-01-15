@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import Gem from '../images/gem.svg';
 
 const Image = styled.img`
-  position: absolute;
+  position: fixed;
   z-index: 0;
   top: -100px;
   right: 0;
