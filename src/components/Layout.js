@@ -5,9 +5,6 @@ import {useSiteMetadata} from '../utils/use-site-metadata';
 import Favicon from '../images/favicon.png';
 import OpenGraphImage from '../images/social.png';
 
-import 'simple-css-reset/reset.css';
-import '../styles/global.css';
-
 /* eslint-disable jsx-a11y/accessible-emoji */
 export default function Layout({children, variant}) {
   const {title, description, siteUrl} = useSiteMetadata();

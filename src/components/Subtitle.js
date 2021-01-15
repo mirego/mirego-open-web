@@ -11,7 +11,6 @@ const Content = styled.div`
 const Title = styled.h2`
   margin: 0 0 5px;
   text-align: center;
-  font-family: 'noe', serif;
   font-size: 26px;
   font-weight: bold;
   color: #444;

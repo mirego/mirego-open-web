@@ -10,7 +10,6 @@ const Header = styled.header`
   padding: 30px 0 70px;
   text-align: center;
   text-transform: uppercase;
-  font-family: 'noe', serif;
   font-size: 32px;
   font-weight: bold;
   line-height: 1;
@@ -37,7 +36,6 @@ const Symbol = styled.span`
 
 const Term = styled.span`
   display: block;
-  padding: 5px 0 0;
 `;
 
 export default () => (

@@ -3,12 +3,12 @@ import styled from '@emotion/styled';
 
 const Content = styled.div`
   width: 100%;
-  max-width: 580px;
+  max-width: 640px;
   padding: 20px 25px;
   border-radius: 3px;
   margin: 0 auto 60px;
   background: rgba(0, 0, 0, 0.04);
-  font-size: 15px;
+  font-size: 14px;
   color: #333;
 `;
 
