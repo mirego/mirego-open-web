@@ -19,7 +19,7 @@ const Content = styled.div`
 export default ({projects}) => (
   <Content>
     {projects.map((project) => (
-      <Project {...project.node} />
+      <Project key={project.jd} {...project.node} />
     ))}
   </Content>
 );
