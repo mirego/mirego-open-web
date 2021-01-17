@@ -30,7 +30,7 @@ exports.sourceNodes = async ({actions, createNodeId, createContentDigest}) => {
 
   const externalProjects = require('./data/external-projects');
 
-  externalProjects.forEach((project) => {
+  for (let project of externalProjects) {
     actions.createNode({
       ...project,
       id: createNodeId(project.name),
@@ -39,5 +39,5 @@ exports.sourceNodes = async ({actions, createNodeId, createContentDigest}) => {
         contentDigest: createContentDigest(project.name),
       },
     });
-  });
+  }
 };
