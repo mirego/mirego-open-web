@@ -13,20 +13,22 @@ const getRepository = async (slug) => {
 exports.sourceNodes = async ({actions, createNodeId, createContentDigest}) => {
   const projects = require('./data/projects');
 
-  for (let project of projects) {
-    const repository = await getRepository(project.slug);
-
-    actions.createNode({
-      ...project,
-      id: createNodeId(project.name),
-      starCount: repository.stargazers_count,
-      createdAt: repository.created_at,
-      internal: {
-        type: 'Project',
-        contentDigest: createContentDigest(project.name),
-      },
+  const projectPromises = projects.map((project) => {
+    return getRepository(project.slug).then((repository) => {
+      actions.createNode({
+        ...project,
+        id: createNodeId(project.name),
+        starCount: repository.stargazers_count,
+        createdAt: repository.created_at,
+        internal: {
+          type: 'Project',
+          contentDigest: createContentDigest(project.name),
+        },
+      });
     });
-  }
+  });
+
+  await Promise.all(projectPromises);
 
   const externalProjects = require('./data/external-projects');
 
