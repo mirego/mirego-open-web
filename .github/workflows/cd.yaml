@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  schedule:
+    - cron: '0 */6 * * *'
 
 jobs:
   cd:
@@ -13,6 +15,8 @@ jobs:
       - uses: actions/checkout@v2
       - run: make dependencies
       - run: make build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

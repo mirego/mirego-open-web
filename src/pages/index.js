@@ -50,7 +50,7 @@ export default ({data}) => (
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allProject {
+    allProject(sort: {fields: [starCount, name], order: DESC}) {
       edges {
         node {
           description
@@ -58,6 +58,8 @@ export const pageQuery = graphql`
           logo
           name
           slug
+          starCount
+          createdAt(formatString: "YYYY")
           tags
         }
       }
