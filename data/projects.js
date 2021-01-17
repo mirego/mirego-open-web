@@ -166,7 +166,7 @@ module.exports = [
   {
     slug: 'activerecord_json_validator',
     logo: 'activerecord-json-validator.svg',
-    name: 'ActiveRecord::JSONValidator',
+    name: 'AR::JSONValidator',
     description:
       'ActiveRecord::JSONValidator makes it easy to validate JSON attributes against a JSON schema.',
     tags: ['ruby', 'rails', 'json-schema'],
