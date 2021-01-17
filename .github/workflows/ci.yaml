@@ -17,3 +17,5 @@ jobs:
       - run: make dependencies
       - run: make lint
       - run: make build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

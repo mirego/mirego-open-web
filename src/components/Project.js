@@ -63,7 +63,7 @@ const Content = styled.div`
 
 const Name = styled.strong`
   display: block;
-  padding: 0 0 14px;
+  padding: 0 0 4px;
   background: #fff;
   text-align: center;
   font-size: 16px;
@@ -76,6 +76,15 @@ const Name = styled.strong`
       word-wrap: break-word;
     }
   }
+`;
+
+const Metadata = styled.span`
+  display: block;
+  background: #fff;
+  padding: 0 0 14px;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 12px;
+  text-align: center;
 `;
 
 const Description = styled.span`
@@ -93,7 +102,15 @@ const Tags = styled.em`
   color: rgba(0, 0, 0, 0.3);
 `;
 
-export default ({slug, name, logo, description, tags}) => (
+export default ({
+  slug,
+  name,
+  logo,
+  description,
+  starCount,
+  createdAt,
+  tags,
+}) => (
   <Link
     href={`https://github.com/mirego/${slug}`}
     target="_blank"
@@ -104,6 +121,9 @@ export default ({slug, name, logo, description, tags}) => (
     </ImageWrapper>
 
     <Name>{name}</Name>
+    <Metadata>
+      ★ {starCount}  •  since {createdAt}
+    </Metadata>
     <Content>
       <Description>{description}</Description>
       <Tags>{tags.map((tag) => `#${tag}`).join(' ')}</Tags>
