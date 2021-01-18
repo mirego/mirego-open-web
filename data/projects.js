@@ -11,24 +11,21 @@ module.exports = [
     slug: 'elixir-boilerplate',
     logo: 'elixir-boilerplate.svg',
     name: 'Elixir Boilerplate',
-    description:
-      'The stable base upon which we build our Elixir projects at Mirego.',
+    description: 'The stable base upon which we build our Elixir projects at Mirego.',
     tags: ['elixir', 'boilerplate'],
   },
   {
     slug: 'ember-boilerplate',
     logo: 'ember-boilerplate.svg',
     name: 'Ember Boilerplate',
-    description:
-      'The stable base upon which we build our Ember.js projects at Mirego.',
+    description: 'The stable base upon which we build our Ember.js projects at Mirego.',
     tags: ['javascript', 'typescript', 'ember', 'boilerplate'],
   },
   {
     slug: 'react-boilerplate',
     logo: 'react-boilerplate.svg',
     name: 'React Boilerplate',
-    description:
-      'The stable base upon which we build our React projects at Mirego.',
+    description: 'The stable base upon which we build our React projects at Mirego.',
     tags: ['javascript', 'typescript', 'react', 'boilerplate'],
   },
   {
@@ -42,8 +39,7 @@ module.exports = [
     slug: 'dispatch',
     logo: 'dispatch.svg',
     name: 'Dispatch',
-    description:
-      'Dispatch makes sure pull requests within a GitHub organization get reviewed by the right people.',
+    description: 'Dispatch makes sure pull requests within a GitHub organization get reviewed by the right people.',
     tags: ['elixir', 'github', 'code-review'],
   },
   {
@@ -58,24 +54,21 @@ module.exports = [
     slug: 'simple-css-reset',
     logo: 'simple-css-reset.svg',
     name: 'Simple CSS Reset',
-    description:
-      'A simple, no-nonsense CSS reset stylesheet to use as an NPM dependency.',
+    description: 'A simple, no-nonsense CSS reset stylesheet to use as an NPM dependency.',
     tags: ['css', 'reset'],
   },
   {
     slug: 'ember-best-language',
     logo: 'ember-best-language.svg',
     name: 'Ember Best Language',
-    description:
-      'A FastBoot-enabled addon to detect the best language for your user.',
+    description: 'A FastBoot-enabled addon to detect the best language for your user.',
     tags: ['javascript', 'typescript', 'i18n'],
   },
   {
     slug: 'credo_naming',
     logo: 'credo-naming.svg',
     name: 'CredoNaming',
-    description:
-      'A suite of Credo checks to enforce naming best practices in an Elixir project.',
+    description: 'A suite of Credo checks to enforce naming best practices in an Elixir project.',
     tags: ['elixir', 'credo', 'consistency'],
   },
   {
@@ -90,8 +83,7 @@ module.exports = [
     slug: 'html_test_identifiers',
     logo: 'html-test-identifiers.svg',
     name: 'HTMLTestIdentifiers',
-    description:
-      'Basic functionality to add data-testid attribute depending on configuration.',
+    description: 'Basic functionality to add data-testid attribute depending on configuration.',
     tags: ['elixir', 'html', 'exunit'],
   },
   {
@@ -106,16 +98,14 @@ module.exports = [
     slug: 'stylelint-mirego',
     logo: 'stylelint-mirego.svg',
     name: 'stylelint-mirego',
-    description:
-      'A collection of Stylelint rules that help our code meet our code styling guidelines.',
+    description: 'A collection of Stylelint rules that help our code meet our code styling guidelines.',
     tags: ['javascript', 'css', 'sass', 'stylelint'],
   },
   {
     slug: 'trikot.streams',
     name: 'Trikot.streams',
     logo: 'trikot.svg',
-    description:
-      'Reactive Streams for Kotlin Multiplatform with mutability checks.',
+    description: 'Reactive Streams for Kotlin Multiplatform with mutability checks.',
     tags: ['kotlin', 'kotlin-multiplatform', 'reactive-streams'],
   },
   {
@@ -129,8 +119,7 @@ module.exports = [
     slug: 'trikot.viewmodels',
     name: 'Trikot.viewmodels',
     logo: 'trikot.svg',
-    description:
-      'Meta abstraction of visual components for Kotlin Multiplatform.',
+    description: 'Meta abstraction of visual components for Kotlin Multiplatform.',
     tags: ['kotlin', 'kotlin-multiplatform'],
   },
   {
@@ -144,8 +133,7 @@ module.exports = [
     slug: 'trikot.kword',
     name: 'Trikot.kword',
     logo: 'trikot.svg',
-    description:
-      'Localization library for Kotlin Multiplatform. Tailor-made for Accent.',
+    description: 'Localization library for Kotlin Multiplatform. Tailor-made for Accent.',
     tags: ['kotlin', 'kotlin-multiplatform', 'i18n'],
   },
   {
@@ -159,24 +147,21 @@ module.exports = [
     slug: 'trikot.analytics',
     name: 'Trikot.analytics',
     logo: 'trikot.svg',
-    description:
-      'Implementation of Multiplatform Analytics in ReactiveStreams.',
+    description: 'Implementation of Multiplatform Analytics in ReactiveStreams.',
     tags: ['kotlin', 'kotlin-multiplatform', 'analytics', 'reactive-streams'],
   },
   {
     slug: 'activerecord_json_validator',
     logo: 'activerecord-json-validator.svg',
     name: 'AR::JSONValidator',
-    description:
-      'ActiveRecord::JSONValidator makes it easy to validate JSON attributes against a JSON schema.',
+    description: 'ActiveRecord::JSONValidator makes it easy to validate JSON attributes against a JSON schema.',
     tags: ['ruby', 'rails', 'json-schema'],
   },
   {
     slug: 'microscope',
     logo: 'microscope.svg',
     name: 'Microscope',
-    description:
-      'Microscope adds useful scopes targeting ActiveRecord boolean, date and datetime fields.',
+    description: 'Microscope adds useful scopes targeting ActiveRecord boolean, date and datetime fields.',
     tags: ['ruby', 'rails'],
   },
   {

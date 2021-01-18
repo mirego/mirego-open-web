@@ -17,24 +17,13 @@ const Paragraph = styled.p`
 
 export default () => (
   <Content>
+    <Paragraph>We hope these lines of code will be useful to you and help you build great products.</Paragraph>
     <Paragraph>
-      We hope these lines of code will be useful to you and help you build great
-      products.
-    </Paragraph>
-    <Paragraph>
-      <a
-        href="https://github.com/mirego/mirego-open-web"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://github.com/mirego/mirego-open-web" target="_blank" rel="noopener noreferrer">
         Built
       </a>{' '}
       with ♥ (and{' '}
-      <a
-        href="https://www.gatsbyjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">
         Gatsby.js
       </a>
       ) by the team @ <a href="https://www.mirego.com">Mirego</a>.

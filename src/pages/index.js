@@ -22,19 +22,13 @@ export default ({data}) => (
       <Intro />
 
       <Subtitle title="Giving back to the community<span class='punctuation'>.</span>">
-        <p>
-          These are the open source projects we actively develop, maintain and
-          support.
-        </p>
+        <p>These are the open source projects we actively develop, maintain and support.</p>
       </Subtitle>
 
       <Projects projects={data.allProject.edges} />
 
       <Subtitle title="“Standing on the shoulders of giants<span class='punctuation'>.</span>”">
-        <p>
-          We leverage several open source projects to build world-class
-          products.
-        </p>
+        <p>We leverage several open source projects to build world-class products.</p>
       </Subtitle>
 
       <ExternalProjects projects={data.allExternalProject.edges} />

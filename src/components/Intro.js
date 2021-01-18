@@ -15,18 +15,13 @@ const Content = styled.div`
 export default () => (
   <Content>
     <p>
-      At <a href="https://www.mirego.com">Mirego</a>, we build a huge majority
-      of our products using open source technologies (eg.{' '}
-      <a href="https://emberjs.com/">Ember.js</a>,{' '}
+      At <a href="https://www.mirego.com">Mirego</a>, we build a huge majority of our products using open source
+      technologies (eg. <a href="https://emberjs.com/">Ember.js</a>,{' '}
       <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/">
         React
       </a>
       ,{' '}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://elixir-lang.org/"
-      >
+      <a target="_blank" rel="noopener noreferrer" href="https://elixir-lang.org/">
         Elixir
       </a>
       ,{' '}
@@ -34,19 +29,14 @@ export default () => (
         Swift
       </a>
       ,{' '}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://kotlinlang.org/"
-      >
+      <a target="_blank" rel="noopener noreferrer" href="https://kotlinlang.org/">
         Kotlin
       </a>
       , etc.) maintained by stable, mature and active communities.
     </p>
     <p>
-      It’s very important for us to give back to these communities by either
-      contributing directly to their projects or by providing libraries and
-      tools that add value to their respective ecosystem.
+      It’s very important for us to give back to these communities by either contributing directly to their projects or
+      by providing libraries and tools that add value to their respective ecosystem.
     </p>
   </Content>
 );

@@ -102,20 +102,8 @@ const Tags = styled.em`
   color: rgba(0, 0, 0, 0.3);
 `;
 
-export default ({
-  slug,
-  name,
-  logo,
-  description,
-  starCount,
-  createdAt,
-  tags,
-}) => (
-  <Link
-    href={`https://github.com/mirego/${slug}`}
-    target="_blank"
-    rel="noopener"
-  >
+export default ({slug, name, logo, description, starCount, createdAt, tags}) => (
+  <Link href={`https://github.com/mirego/${slug}`} target="_blank" rel="noopener">
     <ImageWrapper>
       <Image src={require(`../images/${logo}`)} alt={name} />
     </ImageWrapper>
