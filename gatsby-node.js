@@ -4,6 +4,7 @@ const getRepository = async (slug) => {
   const response = await fetch(`https://api.github.com/repos/mirego/${slug}`, {
     headers: {
       Authorization: `token ${process.env.GITHUB_TOKEN}`,
+      Accept: 'application/vnd.github.mercy-preview+json', // NOTE: This header is needed to obtain repository topics (https://docs.github.com/en/rest/reference/repos#get-all-repository-topics-preview-notices)
     },
   });
 
@@ -20,6 +21,8 @@ exports.sourceNodes = async ({actions, createNodeId, createContentDigest}) => {
         id: createNodeId(project.name),
         starCount: repository.stargazers_count,
         createdAt: repository.created_at,
+        description: repository.description,
+        tags: repository.topics,
         internal: {
           type: 'Project',
           contentDigest: createContentDigest(project.name),
