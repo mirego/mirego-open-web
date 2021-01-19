@@ -12,10 +12,6 @@ const Link = styled.a`
   font-weight: normal;
   transition: background 0.1s ease-in;
 
-  &:hover {
-    background: rgba(0, 0, 0, 0.01);
-  }
-
   @media (max-width: 980px) {
     & {
       width: calc(33.3333% - 10px);
@@ -35,6 +31,12 @@ const Link = styled.a`
       margin-left: 0;
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      background: rgba(255, 255, 255, 0.02);
+    }
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -44,6 +46,12 @@ const ImageWrapper = styled.div`
   border-radius: 3px;
   background: #fff;
   text-align: center;
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      background: rgba(255, 255, 255, 0.02);
+    }
+  }
 `;
 
 const Image = styled.img`
@@ -76,6 +84,13 @@ const Name = styled.strong`
       word-wrap: break-word;
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      background: rgba(255, 255, 255, 0.02);
+      color: #bbb;
+    }
+  }
 `;
 
 const Metadata = styled.span`
@@ -85,6 +100,13 @@ const Metadata = styled.span`
   color: rgba(0, 0, 0, 0.4);
   font-size: 12px;
   text-align: center;
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      background: rgba(255, 255, 255, 0.02);
+      color: #999;
+    }
+  }
 `;
 
 const Description = styled.span`
@@ -92,6 +114,12 @@ const Description = styled.span`
   padding: 6px 0 0;
   font-size: 12px;
   color: rgba(0, 0, 0, 0.75);
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #aaa;
+    }
+  }
 `;
 
 const Tags = styled.em`
@@ -100,6 +128,12 @@ const Tags = styled.em`
   font-size: 12px;
   font-style: normal;
   color: rgba(0, 0, 0, 0.4);
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #777;
+    }
+  }
 `;
 
 export default ({slug, name, logo, description, starCount, createdAt, tags}) => (

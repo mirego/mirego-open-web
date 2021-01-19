@@ -4,6 +4,12 @@ import styled from '@emotion/styled';
 const Content = styled.footer`
   text-align: center;
   color: rgba(0, 0, 0, 0.25);
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #bbb;
+    }
+  }
 `;
 
 const Paragraph = styled.p`

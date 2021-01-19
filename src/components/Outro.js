@@ -9,6 +9,12 @@ const Content = styled.div`
   p {
     margin-bottom: 6px;
   }
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #aaa;
+    }
+  }
 `;
 
 export default () => (
