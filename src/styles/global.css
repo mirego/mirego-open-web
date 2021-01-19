@@ -7,6 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+  }
+}
+
 @media (max-width: 720px) {
   body {
     padding: 30px 10px;

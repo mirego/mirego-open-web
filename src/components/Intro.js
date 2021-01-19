@@ -10,6 +10,13 @@ const Content = styled.div`
   background: rgba(0, 0, 0, 0.04);
   font-size: 14px;
   color: #333;
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #bbb;
+      background: rgba(255, 255, 255, 0.04);
+    }
+  }
 `;
 
 export default () => (

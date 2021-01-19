@@ -6,6 +6,12 @@ const Content = styled.div`
   margin: 0 0 30px;
   text-align: center;
   color: #666;
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #aaa;
+    }
+  }
 `;
 
 const Title = styled.h2`
@@ -14,6 +20,12 @@ const Title = styled.h2`
   font-size: 26px;
   font-weight: bold;
   color: #444;
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #ccc;
+    }
+  }
 `;
 
 export default ({title, children}) => (
