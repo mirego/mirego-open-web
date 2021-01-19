@@ -36,6 +36,7 @@ const Symbol = styled.span`
 
 const Term = styled.span`
   display: block;
+  color: #222;
 `;
 
 export default () => (
