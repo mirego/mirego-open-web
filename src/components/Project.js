@@ -82,7 +82,7 @@ const Metadata = styled.span`
   display: block;
   background: #fff;
   padding: 0 0 14px;
-  color: rgba(0, 0, 0, 0.25);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 12px;
   text-align: center;
 `;
@@ -99,7 +99,7 @@ const Tags = styled.em`
   padding: 8px 0 0;
   font-size: 12px;
   font-style: normal;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.4);
 `;
 
 export default ({slug, name, logo, description, starCount, createdAt, tags}) => (
