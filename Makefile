@@ -42,7 +42,7 @@ targets:
 # ------------------
 
 .PHONY: build
-build:
+build: ## Build the application into a standalone directory
 	npx gatsby build
 
 # Development targets
