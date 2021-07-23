@@ -4,6 +4,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Intro from '../components/Intro';
 import Header from '../components/Header';
+import Title from '../components/Title';
 import Subtitle from '../components/Subtitle';
 import Projects from '../components/Projects';
 import ExternalProjects from '../components/ExternalProjects';
@@ -21,21 +22,25 @@ export default ({data}) => (
 
       <Intro />
 
-      <Subtitle title="Giving back to the community<span class='punctuation'>.</span>">
+      <Title title="Giving back to the community<span class='punctuation'>.</span>">
         <p>These are the open source projects we actively develop, maintain and support.</p>
-      </Subtitle>
+      </Title>
 
-      <Projects projects={data.allProject.edges} />
+      <Subtitle>Featured projects</Subtitle>
+      <Projects projects={data.featuredProjects.edges} />
 
-      <Subtitle title="“Standing on the shoulders of giants<span class='punctuation'>.</span>”">
+      <Subtitle>Other projects</Subtitle>
+      <Projects projects={data.otherProjects.edges} />
+
+      <Title title="“Standing on the shoulders of giants<span class='punctuation'>.</span>”">
         <p>We leverage several open source projects to build world-class products.</p>
-      </Subtitle>
+      </Title>
 
-      <ExternalProjects projects={data.allExternalProject.edges} />
+      <ExternalProjects projects={data.externalProjects.edges} />
 
-      <Subtitle title="But wait, there’s more<span class='punctuation'>.</span>">
+      <Title title="But wait, there’s more<span class='punctuation'>.</span>">
         <Outro />
-      </Subtitle>
+      </Title>
 
       <Footer />
     </Wrapper>
@@ -43,22 +48,33 @@ export default ({data}) => (
 );
 
 export const pageQuery = graphql`
+  fragment projectData on Project {
+    description
+    id
+    logo
+    name
+    slug
+    starCount
+    createdAt(formatString: "YYYY")
+    tags
+  }
+
   query IndexQuery {
-    allProject(sort: {fields: [starCount, name], order: DESC}) {
+    featuredProjects: allProject(filter: {featured: {eq: true}}, sort: {fields: [starCount, name], order: DESC}) {
       edges {
         node {
-          description
-          id
-          logo
-          name
-          slug
-          starCount
-          createdAt(formatString: "YYYY")
-          tags
+          ...projectData
         }
       }
     }
-    allExternalProject {
+    otherProjects: allProject(filter: {featured: {eq: false}}, sort: {fields: [starCount, name], order: DESC}) {
+      edges {
+        node {
+          ...projectData
+        }
+      }
+    }
+    externalProjects: allExternalProject {
       edges {
         node {
           id

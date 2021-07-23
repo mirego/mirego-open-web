@@ -1,25 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const Content = styled.div`
-  padding: 0 10px;
+const Subtitle = styled.h3`
   margin: 0 0 30px;
+  color: #555;
+  font-variant: small-caps;
+  font-weight: 600;
   text-align: center;
-  color: #666;
-
-  @media (prefers-color-scheme: dark) {
-    & {
-      color: #aaa;
-    }
-  }
-`;
-
-const Title = styled.h2`
-  margin: 0 0 5px;
-  text-align: center;
-  font-size: 26px;
-  font-weight: bold;
-  color: #444;
 
   @media (prefers-color-scheme: dark) {
     & {
@@ -28,9 +15,4 @@ const Title = styled.h2`
   }
 `;
 
-export default ({title, children}) => (
-  <Content>
-    <Title dangerouslySetInnerHTML={{__html: title}} />
-    {children}
-  </Content>
-);
+export default ({children}) => <Subtitle>{children}</Subtitle>;
