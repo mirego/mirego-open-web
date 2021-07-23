@@ -26,7 +26,7 @@ export default ({data}) => (
         <p>These are the open source projects we actively develop, maintain and support.</p>
       </Title>
 
-      <Subtitle>Featured projects</Subtitle>
+      <Subtitle>✨ Featured projects ✨</Subtitle>
       <Projects projects={data.featuredProjects.edges} />
 
       <Subtitle>Other projects</Subtitle>
