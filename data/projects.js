@@ -18,6 +18,6 @@ module.exports = [
   {slug: 'simple-css-reset', logo: 'simple-css-reset.svg', name: 'Simple CSS Reset'},
   {slug: 'stylelint-mirego', logo: 'stylelint-mirego.svg', name: 'stylelint-mirego'},
   {slug: 'taylor-ios', logo: 'generic.svg', name: 'Taylor'},
-  {slug: 'trikot', logo: 'trikot.svg', name: 'Trikot'},
+  {slug: 'trikot', logo: 'trikot.svg', name: 'Trikot', featured: true},
   {slug: 'trikot.patron', logo: 'trikot.svg', name: 'Trikot.patron'},
 ];
