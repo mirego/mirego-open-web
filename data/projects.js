@@ -18,12 +18,6 @@ module.exports = [
   {slug: 'simple-css-reset', logo: 'simple-css-reset.svg', name: 'Simple CSS Reset'},
   {slug: 'stylelint-mirego', logo: 'stylelint-mirego.svg', name: 'stylelint-mirego'},
   {slug: 'taylor-ios', logo: 'generic.svg', name: 'Taylor'},
-  {slug: 'trikot.analytics', logo: 'trikot.svg', name: 'Trikot.analytics'},
-  {slug: 'trikot.datasources', logo: 'trikot.svg', name: 'Trikot.datasources'},
-  {slug: 'trikot.foundation', logo: 'trikot.svg', name: 'Trikot.foundation'},
-  {slug: 'trikot.http', logo: 'trikot.svg', name: 'Trikot.http'},
-  {slug: 'trikot.kword', logo: 'trikot.svg', name: 'Trikot.kword'},
+  {slug: 'trikot', logo: 'trikot.svg', name: 'Trikot'},
   {slug: 'trikot.patron', logo: 'trikot.svg', name: 'Trikot.patron'},
-  {slug: 'trikot.streams', logo: 'trikot.svg', name: 'Trikot.streams', featured: true},
-  {slug: 'trikot.viewmodels', logo: 'trikot.svg', name: 'Trikot.viewmodels'},
 ];
