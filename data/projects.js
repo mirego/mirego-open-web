@@ -11,6 +11,7 @@ module.exports = [
   {slug: 'gaffe', logo: 'gaffe.svg', name: 'Gaffe'},
   {slug: 'html_test_helpers', logo: 'html-test-helpers.svg', name: 'HTMLTestHelpers'},
   {slug: 'html_test_identifiers', logo: 'html-test-identifiers.svg', name: 'HTMLTestIdentifiers'},
+  {slug: 'killswitch', logo: 'killswitch.svg', name: 'Killswitch'},
   {slug: 'kotlin-ssml-dsl', logo: 'generic.svg', name: 'kotlin-ssml-dsl'},
   {slug: 'microscope', logo: 'microscope.svg', name: 'Microscope'},
   {slug: 'mix_audit', logo: 'mix-audit.svg', name: 'MixAudit', featured: true},
