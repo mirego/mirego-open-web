@@ -1,10 +1,5 @@
 module.exports = [
   {
-    url: 'https://emberjs.com',
-    logo: 'emberjs.png',
-    name: 'Ember.js',
-  },
-  {
     url: 'https://reactjs.org',
     logo: 'react.png',
     name: 'React',
@@ -24,6 +19,11 @@ module.exports = [
     url: 'https://rubyonrails.org',
     logo: 'rails.png',
     name: 'Ruby on Rails',
+  },
+  {
+    url: 'https://emberjs.com',
+    logo: 'emberjs.png',
+    name: 'Ember.js',
   },
   {
     url: 'https://swift.org',

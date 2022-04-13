@@ -23,7 +23,7 @@ export default () => (
   <Content>
     <p>
       At <a href="https://www.mirego.com">Mirego</a>, we build a huge majority of our products using open source
-      technologies (eg. <a href="https://emberjs.com/">Ember.js</a>,{' '}
+      technologies (eg.
       <a target="_blank" rel="noopener noreferrer" href="https://reactjs.org/">
         React
       </a>
