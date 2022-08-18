@@ -5,6 +5,7 @@ module.exports = [
   {slug: 'credo_naming', logo: 'credo-naming.svg', name: 'CredoNaming'},
   {slug: 'dispatch', logo: 'dispatch.svg', name: 'Dispatch'},
   {slug: 'elixir-boilerplate', logo: 'elixir-boilerplate.svg', name: 'Elixir Boilerplate', featured: true},
+  {slug: 'elixir-security-advisories', logo: 'elixir-security-advisories.svg', name: 'Elixir Security Advisories'},
   {slug: 'ember-best-language', logo: 'ember-best-language.svg', name: 'Ember Best Language'},
   {slug: 'ember-boilerplate', logo: 'ember-boilerplate.svg', name: 'Ember Boilerplate'},
   {slug: 'ember-chai-dom-helpers', logo: 'ember-chai-dom-helpers.svg', name: 'ember-chai-dom-helpers'},
