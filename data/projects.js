@@ -16,6 +16,7 @@ module.exports = [
   {slug: 'kotlin-ssml-dsl', logo: 'generic.svg', name: 'kotlin-ssml-dsl'},
   {slug: 'microscope', logo: 'microscope.svg', name: 'Microscope'},
   {slug: 'mix_audit', logo: 'mix-audit.svg', name: 'MixAudit', featured: true},
+  {slug: 'plug_image_processing', logo: 'plug-image-processing.svg', name: 'PlugImageProcessing'},
   {slug: 'react-boilerplate', logo: 'react-boilerplate.svg', name: 'React Boilerplate'},
   {slug: 'simple-css-reset', logo: 'simple-css-reset.svg', name: 'Simple CSS Reset'},
   {slug: 'stylelint-mirego', logo: 'stylelint-mirego.svg', name: 'stylelint-mirego'},
