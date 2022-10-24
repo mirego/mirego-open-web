@@ -59,8 +59,11 @@ const Image = styled.img`
   height: 60px;
   animation: 0.5s zoom-in;
   transition: transform 0.1s ease-in;
-  opacity: 0.75;
-  filter: saturate(0.75);
+
+  @media (prefers-color-scheme: dark) {
+    opacity: 0.75;
+    filter: saturate(0.75);
+  }
 
   a:hover & {
     transform: scale3d(1.075, 1.075, 1.075);

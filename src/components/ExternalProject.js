@@ -19,8 +19,11 @@ const ImageWrapper = styled.div`
 
 const Image = styled.img`
   height: 50px;
-  opacity: 0.75;
-  filter: saturate(0.75);
+
+  @media (prefers-color-scheme: dark) {
+    opacity: 0.75;
+    filter: saturate(0.75);
+  }
 `;
 
 export default ({url, logo, name}) => (
