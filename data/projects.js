@@ -10,6 +10,7 @@ module.exports = [
   {slug: 'html_test_helpers', logo: 'html-test-helpers.svg', name: 'HTMLTestHelpers'},
   {slug: 'html_test_identifiers', logo: 'html-test-identifiers.svg', name: 'HTMLTestIdentifiers'},
   {slug: 'killswitch', logo: 'killswitch.svg', name: 'Killswitch'},
+  {slug: 'kmp-boilerplate', logo: 'kmp-boilerplate.svg', name: 'KMP Boilerplate', featured: true},
   {slug: 'kotlin-ssml-dsl', logo: 'generic.svg', name: 'kotlin-ssml-dsl'},
   {slug: 'microscope', logo: 'microscope.svg', name: 'Microscope'},
   {slug: 'mix_audit', logo: 'mix-audit.svg', name: 'MixAudit', featured: true},
@@ -19,6 +20,5 @@ module.exports = [
   {slug: 'stylelint-mirego', logo: 'stylelint-mirego.svg', name: 'stylelint-mirego'},
   {slug: 'taylor-ios', logo: 'generic.svg', name: 'Taylor'},
   {slug: 'telemetry_ui', logo: 'telemetry-ui.svg', name: 'Telemetry UI'},
-  {slug: 'trikot', logo: 'trikot.svg', name: 'Trikot', featured: true},
-  {slug: 'trikot.patron', logo: 'trikot.svg', name: 'Trikot.patron'},
+  {slug: 'trikot', logo: 'trikot.svg', name: 'Trikot'},
 ];
