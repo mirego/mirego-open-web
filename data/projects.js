@@ -4,6 +4,7 @@ module.exports = [
   {slug: 'activerecord_json_validator', logo: 'activerecord-json-validator.svg', name: 'AR::JSONValidator'},
   {slug: 'credo_naming', logo: 'credo-naming.svg', name: 'CredoNaming'},
   {slug: 'dispatch', logo: 'dispatch.svg', name: 'Dispatch'},
+  {slug: 'ekiden', logo: 'ekiden.svg', name: 'Ekiden'},
   {slug: 'elixir-boilerplate', logo: 'elixir-boilerplate.svg', name: 'Elixir Boilerplate', featured: true},
   {slug: 'elixir-security-advisories', logo: 'elixir-security-advisories.svg', name: 'Elixir Security Advisories'},
   {slug: 'gaffe', logo: 'gaffe.svg', name: 'Gaffe'},
