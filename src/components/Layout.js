@@ -35,16 +35,15 @@ export default function Layout({children, variant}) {
         />
 
         {process.env.GATSBY_ONETRUST_SITE_ID && (
-          <>
-            <script
-              src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
-              type="text/javascript"
-              charset="UTF-8"
-              data-domain-script={process.env.GATSBY_ONETRUST_SITE_ID}
-            ></script>
-            <script type="text/javascript">function OptanonWrapper() {}</script>
-          </>
+          <script
+            src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+            type="text/javascript"
+            charset="UTF-8"
+            data-domain-script={process.env.GATSBY_ONETRUST_SITE_ID}
+          ></script>
         )}
+
+        {process.env.GATSBY_ONETRUST_SITE_ID && <script type="text/javascript">function OptanonWrapper() {}</script>}
       </Helmet>
 
       <main>{children}</main>
