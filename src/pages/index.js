@@ -1,5 +1,6 @@
 import {graphql} from 'gatsby';
 import React from 'react';
+import {Helmet} from 'react-helmet';
 
 import Layout from '../components/Layout';
 import Intro from '../components/Intro';
@@ -15,6 +16,16 @@ import Wrapper from '../components/Wrapper';
 
 export default ({data}) => (
   <Layout>
+    <Helmet>
+      <script
+        src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+        type="text/javascript"
+        charset="UTF-8"
+        data-domain-script={process.env.GATSBY_ONETRUST_SITE_ID}
+      ></script>
+      <script type="text/javascript">function OptanonWrapper() {}</script>
+    </Helmet>
+
     <Gem />
 
     <Wrapper>
