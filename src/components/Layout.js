@@ -33,6 +33,17 @@ export default function Layout({children, variant}) {
           type="text/css"
           href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700"
         />
+
+        {process.env.GATSBY_ONETRUST_SITE_ID && (
+          <script
+            src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+            type="text/javascript"
+            charset="UTF-8"
+            data-domain-script={process.env.GATSBY_ONETRUST_SITE_ID}
+          ></script>
+        )}
+
+        {process.env.GATSBY_ONETRUST_SITE_ID && <script type="text/javascript">function OptanonWrapper() {}</script>}
       </Helmet>
 
       <main>{children}</main>
