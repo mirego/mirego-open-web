@@ -8,6 +8,11 @@ const getRepository = async (slug) => {
     },
   });
 
+  if (response.status !== 200) {
+    console.error(`Error fetching repository mirego/${slug}: ${response.status} ${response.statusText}`);
+    return process.exit();
+  }
+
   return await response.json();
 };
 
