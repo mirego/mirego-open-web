@@ -24,7 +24,7 @@ const Paragraph = styled.p`
 const CookieButton = styled.div`
   font-size: 10px;
   margin-top: 10px;
-`
+`;
 
 export default () => (
   <Content>
