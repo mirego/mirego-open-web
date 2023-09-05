@@ -21,6 +21,11 @@ const Paragraph = styled.p`
   }
 `;
 
+const CookieButton = styled.div`
+  font-size: 10px;
+  margin-top: 10px;
+`;
+
 export default () => (
   <Content>
     <Paragraph>We hope these lines of code will be useful to you and help you build great products.</Paragraph>
@@ -34,5 +39,9 @@ export default () => (
       </a>
       ) by the team @ <a href="https://www.mirego.com">Mirego</a>.
     </Paragraph>
+
+    <CookieButton>
+      <span id="ot-sdk-btn" class="ot-sdk-show-settings"></span>
+    </CookieButton>
   </Content>
 );
