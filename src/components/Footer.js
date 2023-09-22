@@ -26,6 +26,11 @@ const CookieButton = styled.div`
   margin-top: 10px;
 `;
 
+const PrivacyPolicyLink = styled.a`
+  font-size: 10px;
+  margin-top: 10px;
+`;
+
 export default () => (
   <Content>
     <Paragraph>We hope these lines of code will be useful to you and help you build great products.</Paragraph>
@@ -43,5 +48,7 @@ export default () => (
     <CookieButton>
       <span id="ot-sdk-btn" class="ot-sdk-show-settings"></span>
     </CookieButton>
+
+    <PrivacyPolicyLink href="https://www.mirego.com/en/privacy-policy">Privacy policy</PrivacyPolicyLink>
   </Content>
 );

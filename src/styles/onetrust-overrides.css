@@ -1,0 +1,84 @@
+.ot-bnr-save-handler {
+  border-color: #000 !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  transition: 0.1s ease all;
+  border-radius: 5px !important;
+}
+
+.ot-bnr-save-handler:hover {
+  opacity: 1 !important;
+  border-color: #000 !important;
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+#onetrust-banner-sdk {
+  border-radius: 10px !important;
+
+  &:focus {
+    outline-width: 0 !important;
+  }
+}
+
+#onetrust-banner-sdk > .ot-cat-lst {
+  background-color: #fff !important;
+  box-shadow: none !important;
+}
+
+#onetrust-banner-sdk.otFlat {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+#onetrust-banner-sdk.otFlat > .ot-sdk-row {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+.ot-chkbox label::before {
+  border-color: #000 !important;
+  background-color: #000 !important;
+}
+
+.banner-actions-container button,
+#onetrust-accept-btn-handler {
+  border-radius: 5px !important;
+
+  &:hover {
+    border-color: #242424 !important;
+    background-color: #242424 !important;
+    color: #fff !important;
+  }
+}
+
+.banner-actions-container button:hover,
+#onetrust-accept-btn-handler:hover {
+  border-color: #242424 !important;
+  background-color: #242424 !important;
+  color: #fff !important;
+}
+
+#onetrust-pc-btn-handler:hover {
+  opacity: 1 !important;
+}
+
+#onetrust-pc-btn-handler:not(.cookie-setting-link):hover {
+  color: #242424 !important;
+}
+
+#onetrust-pc-btn-handler.cookie-setting-link:hover {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+#onetrust-policy .banner-header {
+  display: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  #onetrust-banner-sdk.otFlat > .ot-sdk-row {
+    flex-direction: column !important;
+  }
+}
