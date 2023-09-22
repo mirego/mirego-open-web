@@ -1,9 +1,9 @@
 .ot-bnr-save-handler {
   border-color: #000 !important;
+  border-radius: 5px !important;
   background-color: #fff !important;
   color: #000 !important;
   transition: 0.1s ease all;
-  border-radius: 5px !important;
 }
 
 .ot-bnr-save-handler:hover {
@@ -69,8 +69,8 @@
 }
 
 #onetrust-pc-btn-handler.cookie-setting-link:hover {
-  color: #000 !important;
   text-decoration: none !important;
+  color: #000 !important;
 }
 
 #onetrust-policy .banner-header {
