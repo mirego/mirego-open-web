@@ -17,6 +17,7 @@ module.exports = [
   {slug: 'mix_audit', logo: 'mix-audit.svg', name: 'MixAudit', featured: true},
   {slug: 'plug_image_processing', logo: 'plug-image-processing.svg', name: 'PlugImageProcessing'},
   {slug: 'react-boilerplate', logo: 'react-boilerplate.svg', name: 'React Boilerplate'},
+  {slug: 'react-native-boilerplate', logo: 'killswitch.svg', name: 'React Native Boilerplate'},
   {slug: 'react-native-killswitch', logo: 'killswitch.svg', name: 'React Native Killswitch'},
   {slug: 'simple-css-reset', logo: 'simple-css-reset.svg', name: 'Simple CSS Reset'},
   {slug: 'stylelint-mirego', logo: 'stylelint-mirego.svg', name: 'stylelint-mirego'},
