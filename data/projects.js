@@ -13,6 +13,7 @@ module.exports = [
   {slug: 'killswitch', logo: 'killswitch.svg', name: 'Killswitch'},
   {slug: 'kmp-boilerplate', logo: 'kmp-boilerplate.svg', name: 'KMP Boilerplate', featured: true},
   {slug: 'kotlin-ssml-dsl', logo: 'generic.svg', name: 'kotlin-ssml-dsl'},
+  {slug: 'konnectivity', logo: 'konnectivity.svg', name: 'Konnektivity'},
   {slug: 'microscope', logo: 'microscope.svg', name: 'Microscope'},
   {slug: 'mix_audit', logo: 'mix-audit.svg', name: 'MixAudit', featured: true},
   {slug: 'plug_image_processing', logo: 'plug-image-processing.svg', name: 'PlugImageProcessing'},
