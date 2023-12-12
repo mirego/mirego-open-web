@@ -1,5 +1,6 @@
 module.exports = [
   {slug: 'absinthe_error_payload', logo: 'absinthe-error-payload.svg', name: 'AbsintheErrorPayload'},
+  {slug: 'absinthe_security', logo: 'absinthe-security.svg', name: 'AbsintheSecurity'},
   {slug: 'accent', logo: 'accent.svg', name: 'Accent', featured: true},
   {slug: 'activerecord_json_validator', logo: 'activerecord-json-validator.svg', name: 'AR::JSONValidator'},
   {slug: 'credo_naming', logo: 'credo-naming.svg', name: 'CredoNaming'},
