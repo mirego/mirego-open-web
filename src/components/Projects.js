@@ -6,14 +6,7 @@ import Project from './Project';
 const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -5px 80px;
-
-  @media (max-width: 810px) {
-    & {
-      margin-right: 0;
-      margin-left: 0;
-    }
-  }
+  margin-bottom: 80px;
 `;
 
 export default ({projects}) => (

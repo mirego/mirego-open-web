@@ -25,7 +25,7 @@ exports.sourceNodes = async ({actions, createNodeId, createContentDigest}) => {
         ...project,
         id: createNodeId(project.name),
         starCount: repository.stargazers_count,
-        featured: !!project.featured,
+        featured: project.featured,
         createdAt: repository.created_at,
         description: repository.description,
         tags: repository.topics,

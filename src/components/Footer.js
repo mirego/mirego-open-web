@@ -2,11 +2,11 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Content = styled.footer`
-  color: rgba(0, 0, 0, 0.25);
+  color: #050307;
 
   @media (prefers-color-scheme: dark) {
     & {
-      color: #bbb;
+      color: #f7edde;
     }
   }
 `;

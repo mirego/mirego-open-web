@@ -4,10 +4,10 @@ import styled from '@emotion/styled';
 const Link = styled.a`
   display: block;
   width: calc(25% - 10px);
-  border: 1px solid rgba(0, 0, 0, 0.01);
-  border-radius: 3px;
+  border: 0;
+  border-radius: 26px;
+  background: #050307;
   margin: 0 5px 10px;
-  background: rgba(0, 0, 0, 0.025);
   text-decoration: none;
   font-weight: normal;
   transition: background 0.1s ease-in;
@@ -34,56 +34,33 @@ const Link = styled.a`
 
   @media (prefers-color-scheme: dark) {
     & {
-      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid #f7edde;
     }
   }
 `;
 
 const ImageWrapper = styled.div`
   display: flex;
-  justify-content: center;
-  padding: 30px 0 16px;
-  border-radius: 3px;
-  background: #fff;
-  text-align: center;
-
-  @media (prefers-color-scheme: dark) {
-    & {
-      background: rgba(255, 255, 255, 0.02);
-    }
-  }
+  padding: 32px 32px 32px;
 `;
 
 const Image = styled.img`
   display: block;
-  height: 60px;
-  animation: 0.5s zoom-in;
-  transition: transform 0.1s ease-in;
-
-  @media (prefers-color-scheme: dark) {
-    opacity: 0.75;
-    filter: saturate(0.75);
-  }
-
-  a:hover & {
-    transform: scale3d(1.075, 1.075, 1.075);
-  }
+  height: 70px;
 `;
 
 const Content = styled.div`
-  padding: 14px 20px;
+  padding: 16px 32px 40px;
 `;
 
 const Name = styled.strong`
   display: block;
-  padding: 0 10px 8px;
-  background: #fff;
-  text-align: center;
+  padding: 0 32px 8px;
   font-family: 'Almirego Display', sans-serif;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 1.1;
-  color: rgba(0, 0, 0, 0.75);
+  line-height: 1.3;
+  color: #f7edde;
   word-wrap: wrap;
 
   @media (max-width: 720px) {
@@ -91,56 +68,28 @@ const Name = styled.strong`
       word-wrap: break-word;
     }
   }
-
-  @media (prefers-color-scheme: dark) {
-    & {
-      background: rgba(255, 255, 255, 0.02);
-      color: #bbb;
-    }
-  }
 `;
 
 const Metadata = styled.span`
   display: block;
-  background: #fff;
-  padding: 0 0 14px;
-  color: rgba(0, 0, 0, 0.4);
+  padding: 0 32px 0;
+  color: #f7edde;
   font-size: 14px;
-  text-align: center;
-
-  @media (prefers-color-scheme: dark) {
-    & {
-      background: rgba(255, 255, 255, 0.02);
-      color: #999;
-    }
-  }
 `;
 
 const Description = styled.span`
   display: block;
-  padding: 6px 0 0;
-  font-size: 13px;
-  color: rgba(0, 0, 0, 0.75);
-
-  @media (prefers-color-scheme: dark) {
-    & {
-      color: #aaa;
-    }
-  }
+  padding: 6px 0 12px;
+  font-size: 15px;
+  color: rgba(247, 237, 222, 1);
 `;
 
 const Tags = styled.em`
   display: block;
   padding: 8px 0 0;
-  font-size: 11px;
+  font-size: 12px;
   font-style: normal;
-  color: rgba(0, 0, 0, 0.4);
-
-  @media (prefers-color-scheme: dark) {
-    & {
-      color: #777;
-    }
-  }
+  color: rgba(247, 237, 222, 0.75);
 `;
 
 export default ({slug, name, logo, description, starCount, createdAt, tags}) => (

@@ -5,7 +5,7 @@ const Content = styled.div`
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
 

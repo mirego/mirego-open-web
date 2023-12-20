@@ -7,10 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,
+body {
+  background: #f7edde;
+}
+
 @media (prefers-color-scheme: dark) {
   html,
   body {
-    background: #111;
+    background: #050307;
   }
 }
 
@@ -24,12 +29,19 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   text-decoration: none;
   font-weight: 500;
-  color: #666;
+  color: #050307;
   transition: background 0.1s ease-in;
 }
 
 a:hover {
-  color: #444;
+  color: #050307;
+}
+
+@media (prefers-color-scheme: dark) {
+  a,
+  a:hover {
+    color: #f7edde;
+  }
 }
 
 p {
@@ -42,18 +54,6 @@ p:last-child {
 
 .punctuation {
   color: #ff382a;
-}
-
-@keyframes zoom-in {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
 }
 
 @keyframes zoom-out {

@@ -5,11 +5,11 @@ const Content = styled.div`
   width: 100%;
   margin: 0 auto 90px;
   font-size: 20px;
-  color: #333;
+  color: #050307;
 
   @media (prefers-color-scheme: dark) {
     & {
-      color: #bbb;
+      color: #f7edde;
     }
   }
 `;

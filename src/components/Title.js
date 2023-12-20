@@ -3,11 +3,11 @@ import styled from '@emotion/styled';
 
 const Content = styled.div`
   margin: 0 0 64px;
-  color: #666;
+  color: #050307;
 
   @media (prefers-color-scheme: dark) {
     & {
-      color: #aaa;
+      color: #f7edde;
     }
   }
 `;
@@ -17,11 +17,11 @@ const Title = styled.h2`
   font-family: 'Almirego Display', sans-serif;
   font-size: 30px;
   font-weight: bold;
-  color: #444;
+  color: #050307;
 
   @media (prefers-color-scheme: dark) {
     & {
-      color: #ccc;
+      color: #f7edde;
     }
   }
 `;

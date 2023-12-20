@@ -22,9 +22,7 @@ export default ({data}) => (
         <p>These are the open source projects we actively develop, maintain and support.</p>
       </Title>
 
-      <Projects projects={data.featuredProjects.edges} />
-
-      <Projects projects={data.otherProjects.edges} />
+      <Projects projects={[...data.featuredProjects.edges, ...data.otherProjects.edges]} />
 
       <Title title="“Standing on the shoulders of giants<span class='punctuation'>.</span>”">
         <p>We leverage several open source projects to build world-class products.</p>
@@ -54,14 +52,14 @@ export const pageQuery = graphql`
   }
 
   query IndexQuery {
-    featuredProjects: allProject(filter: {featured: {eq: true}}, sort: {fields: [starCount, name], order: DESC}) {
+    featuredProjects: allProject(filter: {featured: {gte: 0}}, sort: {fields: [starCount, name], order: DESC}) {
       edges {
         node {
           ...projectData
         }
       }
     }
-    otherProjects: allProject(filter: {featured: {eq: false}}, sort: {fields: [starCount, name], order: DESC}) {
+    otherProjects: allProject(filter: {featured: {eq: null}}, sort: {fields: [starCount, name], order: DESC}) {
       edges {
         node {
           ...projectData

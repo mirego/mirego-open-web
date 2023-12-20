@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 const Content = styled.div`
   margin: 0 0 100px;
-  color: #666;
+  color: #050307;
 
   p {
     margin-bottom: 6px;
@@ -11,7 +11,7 @@ const Content = styled.div`
 
   @media (prefers-color-scheme: dark) {
     & {
-      color: #aaa;
+      color: #f7edde;
     }
   }
 `;

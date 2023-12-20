@@ -19,12 +19,12 @@ const Header = styled.header`
 `;
 
 const Logo = styled.span`
-  color: #1c1c1c;
+  color: #050307;
   font-weight: bold;
 
   @media (prefers-color-scheme: dark) {
     & {
-      color: #eee;
+      color: #f7edde;
     }
   }
 `;
@@ -48,11 +48,11 @@ const Term = styled.span`
   margin: 0 0 0 8px;
   border: 2px solid;
   border-radius: 24px;
-  color: #1c1c1c;
+  color: #050307;
 
   @media (prefers-color-scheme: dark) {
     & {
-      color: #eee;
+      color: #f7edde;
     }
   }
 `;
