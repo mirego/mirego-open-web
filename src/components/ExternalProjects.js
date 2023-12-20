@@ -5,9 +5,7 @@ import ExternalProject from './ExternalProject.js';
 
 const Content = styled.div`
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  padding: 0 200px;
 
   @media (max-width: 720px) {
     padding: 0;
@@ -16,12 +14,11 @@ const Content = styled.div`
 
 const ContentWrapper = styled.div`
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
-  padding: 20px;
   border-radius: 3px;
-  margin: 0 auto 50px;
+  margin: 0 0 50px;
 `;
 
 export default ({projects}) => (

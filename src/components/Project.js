@@ -42,7 +42,7 @@ const Link = styled.a`
 const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
-  padding: 20px 0 16px;
+  padding: 30px 0 16px;
   border-radius: 3px;
   background: #fff;
   text-align: center;
@@ -76,11 +76,13 @@ const Content = styled.div`
 
 const Name = styled.strong`
   display: block;
-  padding: 0 0 4px;
+  padding: 0 10px 8px;
   background: #fff;
   text-align: center;
-  font-size: 16px;
+  font-family: 'Almirego Display', sans-serif;
+  font-size: 17px;
   font-weight: bold;
+  line-height: 1.1;
   color: rgba(0, 0, 0, 0.75);
   word-wrap: wrap;
 
@@ -103,7 +105,7 @@ const Metadata = styled.span`
   background: #fff;
   padding: 0 0 14px;
   color: rgba(0, 0, 0, 0.4);
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 
   @media (prefers-color-scheme: dark) {
@@ -117,7 +119,7 @@ const Metadata = styled.span`
 const Description = styled.span`
   display: block;
   padding: 6px 0 0;
-  font-size: 12px;
+  font-size: 13px;
   color: rgba(0, 0, 0, 0.75);
 
   @media (prefers-color-scheme: dark) {
@@ -130,7 +132,7 @@ const Description = styled.span`
 const Tags = styled.em`
   display: block;
   padding: 8px 0 0;
-  font-size: 12px;
+  font-size: 11px;
   font-style: normal;
   color: rgba(0, 0, 0, 0.4);
 

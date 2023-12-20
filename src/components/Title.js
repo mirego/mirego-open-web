@@ -2,9 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Content = styled.div`
-  padding: 0 10px;
-  margin: 0 0 30px;
-  text-align: center;
+  margin: 0 0 64px;
   color: #666;
 
   @media (prefers-color-scheme: dark) {
@@ -16,8 +14,8 @@ const Content = styled.div`
 
 const Title = styled.h2`
   margin: 0 0 5px;
-  text-align: center;
-  font-size: 26px;
+  font-family: 'Almirego Display', sans-serif;
+  font-size: 30px;
   font-weight: bold;
   color: #444;
 

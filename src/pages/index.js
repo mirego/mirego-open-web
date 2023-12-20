@@ -5,18 +5,14 @@ import Layout from '../components/Layout';
 import Intro from '../components/Intro';
 import Header from '../components/Header';
 import Title from '../components/Title';
-import Subtitle from '../components/Subtitle';
 import Projects from '../components/Projects';
 import ExternalProjects from '../components/ExternalProjects';
 import Outro from '../components/Outro';
 import Footer from '../components/Footer';
-import Gem from '../components/Gem';
 import Wrapper from '../components/Wrapper';
 
 export default ({data}) => (
   <Layout>
-    <Gem />
-
     <Wrapper>
       <Header />
 
@@ -26,10 +22,8 @@ export default ({data}) => (
         <p>These are the open source projects we actively develop, maintain and support.</p>
       </Title>
 
-      <Subtitle>✨ Featured projects ✨</Subtitle>
       <Projects projects={data.featuredProjects.edges} />
 
-      <Subtitle>Other projects</Subtitle>
       <Projects projects={data.otherProjects.edges} />
 
       <Title title="“Standing on the shoulders of giants<span class='punctuation'>.</span>”">

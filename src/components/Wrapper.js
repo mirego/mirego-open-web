@@ -11,7 +11,7 @@ const Content = styled.div`
 
   @media (max-width: 600px) {
     & {
-      padding: 0;
+      padding: 0 10px;
     }
   }
 `;

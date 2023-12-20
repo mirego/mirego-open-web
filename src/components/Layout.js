@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import {useSiteMetadata} from '../utils/use-site-metadata';
 
-import Favicon from '../images/favicon.png';
+import Favicon from '../images/favicon.svg';
 import OpenGraphImage from '../images/social.png';
 
 /* eslint-disable jsx-a11y/accessible-emoji */
@@ -15,7 +15,7 @@ export default function Layout({children, variant}) {
         <title>{title}</title>
         <meta name="description" content={description} />
 
-        <link rel="shortcut icon" type="image/png" href={Favicon} />
+        <link rel="shortcut icon" type="image/svg+xml" href={Favicon} />
 
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
@@ -27,12 +27,6 @@ export default function Layout({children, variant}) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@mirego" />
         <meta name="twitter:creator" content="@mirego" />
-
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700"
-        />
 
         {process.env.GATSBY_ONETRUST_SITE_ID && (
           <script

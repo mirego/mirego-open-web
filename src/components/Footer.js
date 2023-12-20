@@ -2,7 +2,6 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Content = styled.footer`
-  text-align: center;
   color: rgba(0, 0, 0, 0.25);
 
   @media (prefers-color-scheme: dark) {
@@ -17,7 +16,7 @@ const Paragraph = styled.p`
   font-size: 12px;
 
   &:first-of-type {
-    font-size: 14px;
+    font-size: 15px;
   }
 `;
 
