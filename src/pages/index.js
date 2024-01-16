@@ -24,7 +24,7 @@ export default ({data}) => (
 
       <Projects projects={[...data.featuredProjects.edges, ...data.otherProjects.edges]} />
 
-      <Title title="“Standing on the shoulders of giants">
+      <Title title="“Standing on the shoulders of giants”">
         <p>We leverage several open source projects to build world-class products.</p>
       </Title>
 
