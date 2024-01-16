@@ -92,6 +92,14 @@ const Tags = styled.em`
   color: rgba(247, 237, 222, 0.75);
 `;
 
+const Pill = styled.span`
+  display: inline-block;
+  margin: 0 4px 0 0;
+  padding: 1px 8px;
+  border: 1px solid rgba(247, 237, 222, 0.75);
+  border-radius: 12px;
+`;
+
 export default ({slug, name, logo, description, starCount, createdAt, tags}) => (
   <Link href={`https://github.com/mirego/${slug}`} target="_blank" rel="noopener">
     <ImageWrapper>
@@ -100,7 +108,8 @@ export default ({slug, name, logo, description, starCount, createdAt, tags}) => 
 
     <Name>{name}</Name>
     <Metadata>
-      ★ {starCount}  •  since {createdAt}
+      <Pill>★ {starCount}</Pill>
+      <Pill>since {createdAt}</Pill>
     </Metadata>
     <Content>
       <Description>{description}</Description>
