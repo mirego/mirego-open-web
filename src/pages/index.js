@@ -18,19 +18,19 @@ export default ({data}) => (
 
       <Intro />
 
-      <Title title="Giving back to the community<span class='punctuation'>.</span>">
+      <Title title="Giving back to the community">
         <p>These are the open source projects we actively develop, maintain and support.</p>
       </Title>
 
       <Projects projects={[...data.featuredProjects.edges, ...data.otherProjects.edges]} />
 
-      <Title title="“Standing on the shoulders of giants<span class='punctuation'>.</span>”">
+      <Title title="“Standing on the shoulders of giants">
         <p>We leverage several open source projects to build world-class products.</p>
       </Title>
 
       <ExternalProjects projects={data.externalProjects.edges} />
 
-      <Title title="But wait, there’s more<span class='punctuation'>.</span>">
+      <Title title="But wait, there’s more">
         <Outro />
       </Title>
 
