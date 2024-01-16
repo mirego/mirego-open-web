@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import {useSiteMetadata} from '../utils/use-site-metadata';
 
 import Favicon from '../images/favicon.svg';
-import OpenGraphImage from '../images/social.png';
+import OpenGraphImage from '../images/social-pulse.png';
 
 /* eslint-disable jsx-a11y/accessible-emoji */
 export default function Layout({children, variant}) {
