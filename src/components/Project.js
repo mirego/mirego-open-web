@@ -121,8 +121,14 @@ const Pill = styled.span`
   display: inline-block;
   margin: 0 4px 0 0;
   padding: 1px 8px;
-  border: 1px solid rgba(247, 237, 222, 0.75);
+  border: 1px solid #050307;
   border-radius: 12px;
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      border-color: #f7edde;
+    }
+  }
 `;
 
 export default ({slug, name, logo, description, starCount, createdAt, tags}) => (
