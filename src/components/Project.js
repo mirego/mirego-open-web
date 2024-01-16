@@ -6,7 +6,7 @@ const Link = styled.a`
   width: calc(25% - 10px);
   border: 0;
   border-radius: 26px;
-  background: #050307;
+  background: #f7edde;
   margin: 0 5px 10px;
   text-decoration: none;
   font-weight: normal;
@@ -34,6 +34,7 @@ const Link = styled.a`
 
   @media (prefers-color-scheme: dark) {
     & {
+      background: transparent;
       border: 1px solid #f7edde;
     }
   }
@@ -60,7 +61,7 @@ const Name = styled.strong`
   font-size: 20px;
   font-weight: bold;
   line-height: 1.3;
-  color: #f7edde;
+  color: #050307;
   word-wrap: wrap;
 
   @media (max-width: 720px) {
@@ -68,20 +69,38 @@ const Name = styled.strong`
       word-wrap: break-word;
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #f7edde;
+    }
+  }
 `;
 
 const Metadata = styled.span`
   display: block;
   padding: 0 32px 0;
-  color: #f7edde;
+  color: #050307;
   font-size: 14px;
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #f7edde;
+    }
+  }
 `;
 
 const Description = styled.span`
   display: block;
   padding: 6px 0 12px;
   font-size: 15px;
-  color: rgba(247, 237, 222, 1);
+  color: #050307;
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: #f7edde;
+    }
+  }
 `;
 
 const Tags = styled.em`
@@ -89,7 +108,13 @@ const Tags = styled.em`
   padding: 8px 0 0;
   font-size: 12px;
   font-style: normal;
-  color: rgba(247, 237, 222, 0.75);
+  color: rgba(0, 0, 0, 0.75);
+
+  @media (prefers-color-scheme: dark) {
+    & {
+      color: rgba(255, 255, 255, 0.75);
+    }
+  }
 `;
 
 const Pill = styled.span`

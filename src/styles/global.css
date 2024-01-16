@@ -9,7 +9,7 @@ body {
 
 html,
 body {
-  background: #f7edde;
+  background: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
