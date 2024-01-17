@@ -35,7 +35,7 @@ const Link = styled.a`
   @media (prefers-color-scheme: dark) {
     & {
       background: transparent;
-      border: 1px solid #f7edde;
+      border: 1px solid #5b5b5b;
     }
   }
 `;
