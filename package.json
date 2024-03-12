@@ -35,7 +35,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "2.2.1",
-    "stylelint": "^13.8.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-mirego": "^1.0.6",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-styled-components": "0.1.1",
