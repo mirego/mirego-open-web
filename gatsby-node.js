@@ -1,4 +1,4 @@
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+let fetch = require('node-fetch');
 
 const getRepository = async (slug) => {
   const response = await fetch(`https://api.github.com/repos/mirego/${slug}`, {
